@@ -174,16 +174,13 @@ html {
 }
 @media all and (min-width: 1024px) {
     .body-container {
-        grid-template-rows: 65px 200px 544px 100px;
+        grid-template-rows: 65px 500px 544px 100px;
         #main-section {
             display: flex;
             flex-direction: row;
             align-content: center;
             justify-content: center;
-            animation-name: rotacion;
-            animation-iteration-count: infinite;
-            animation-duration: 2s;
-            background: linear-gradient(to top, #DDD2CE, #CCBCB5,#bba69c,#8C7C75);
+            height: 500px;
             .main-container {
                 h1 {
                     margin: 70px;
@@ -249,22 +246,5 @@ html {
                 }
             }
         }
-    }
-}
-@keyframes rotacion {
-    0% {
-        background: linear-gradient(0deg, #DDD2CE, #CCBCB5,#bba69c,#8C7C75);;
-    }
-    25% {
-        background: linear-gradient(90deg, #DDD2CE, #CCBCB5,#bba69c,#8C7C75);;
-    }
-    50% {
-        background: linear-gradient(180deg, #DDD2CE, #CCBCB5,#bba69c,#8C7C75);;
-    }
-    75% {
-        background: linear-gradient(270deg, #DDD2CE, #CCBCB5,#bba69c,#8C7C75);;
-    }
-    100% {
-        background: linear-gradient(360deg, #DDD2CE, #CCBCB5,#bba69c,#8C7C75);;
     }
 }

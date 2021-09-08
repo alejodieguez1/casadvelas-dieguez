@@ -130,16 +130,13 @@ html {
       max-height: 500px; } }
 @media all and (min-width: 1024px) {
   .body-container {
-    grid-template-rows: 65px 200px 544px 100px; }
+    grid-template-rows: 65px 500px 544px 100px; }
     .body-container #main-section {
       display: flex;
       flex-direction: row;
       align-content: center;
       justify-content: center;
-      animation-name: rotacion;
-      animation-iteration-count: infinite;
-      animation-duration: 2s;
-      background: linear-gradient(to top, #DDD2CE, #CCBCB5, #bba69c, #8C7C75); }
+      height: 500px; }
       .body-container #main-section .main-container h1 {
         margin: 70px; }
     .body-container #nav-section {
@@ -186,17 +183,6 @@ html {
         color: #2F2A27;
         font-size: 17px;
         transition: 0.2s; } }
-@keyframes rotacion {
-  0% {
-    background: linear-gradient(0deg, #DDD2CE, #CCBCB5, #bba69c, #8C7C75); }
-  25% {
-    background: linear-gradient(90deg, #DDD2CE, #CCBCB5, #bba69c, #8C7C75); }
-  50% {
-    background: linear-gradient(180deg, #DDD2CE, #CCBCB5, #bba69c, #8C7C75); }
-  75% {
-    background: linear-gradient(270deg, #DDD2CE, #CCBCB5, #bba69c, #8C7C75); }
-  100% {
-    background: linear-gradient(360deg, #DDD2CE, #CCBCB5, #bba69c, #8C7C75); } }
 html {
   font-size: 16px;
   font-family: 'Roboto', sans-serif; }
