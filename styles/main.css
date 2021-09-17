@@ -4,10 +4,14 @@ html {
 
 .body-container {
   display: grid;
-  grid-template-rows: 100px 600px 465px 65px; }
+  grid-template-rows: 102px 600px 465px 65px; }
   .body-container #header-section {
     background-color: #ffff;
     box-shadow: 0px 0px 5px #464646; }
+    .body-container #header-section .footer-bar {
+      height: 2px;
+      width: 100%;
+      background: #666058; }
     .body-container #header-section #nav-section img {
       margin-left: 10px;
       width: 100px;
@@ -73,7 +77,7 @@ html {
       text-align: center; }
     .body-container #main-section .parallax {
       /* The image used */
-      background-image: url("/assets/parallax-photo.jpg");
+      background-image: url("/assets/parallax-photo-2.jpg");
       /* Set a specific height */
       min-height: 600px;
       /* Create the parallax scrolling effect */
@@ -114,7 +118,7 @@ html {
 
 @media all and (min-width: 768px) {
   .body-container {
-    grid-template-rows: 100px 600px 535px 100px; }
+    grid-template-rows: 102px 600px 535px 100px; }
     .body-container #header-section #nav-section {
       display: flex;
       flex-direction: row;
@@ -140,7 +144,7 @@ html {
       max-height: 500px; } }
 @media all and (min-width: 1024px) {
   .body-container {
-    grid-template-rows: 100px 600px 544px 100px; }
+    grid-template-rows: 102px 600px 544px 100px; }
     .body-container #main-section {
       display: flex;
       flex-direction: row;
