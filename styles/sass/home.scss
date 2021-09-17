@@ -76,6 +76,11 @@ html {
                 transition: 0.2s ease-out;
                 width: 20px;
             }
+            .footer-bar {
+                height: 2px;
+                width: 100%;
+                background: #666058;
+            }
         }
     }
     #main-section {
@@ -104,7 +109,7 @@ html {
         }
     }
     #slider-section {
-        background: blanchedalmond;
+        background: rgb(255, 245, 230);
         display: flex;
         flex-direction: row;
         justify-content: center;
