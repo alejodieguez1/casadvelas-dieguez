@@ -63,10 +63,6 @@ html {
       transform: translate(0, -6.2px) rotate(-45deg);
       transition: 0.2s ease-out;
       width: 20px; }
-    .body-container #header-section #nav-section .footer-bar {
-      height: 2px;
-      width: 100%;
-      background: #666058; }
   .body-container #main-section {
     display: flex;
     flex-direction: column;
@@ -118,7 +114,7 @@ html {
 
 @media all and (min-width: 768px) {
   .body-container {
-    grid-template-rows: 65px 600px 535px 50px; }
+    grid-template-rows: 100px 600px 535px 100px; }
     .body-container #header-section #nav-section {
       display: flex;
       flex-direction: row;
@@ -135,14 +131,16 @@ html {
         max-height: 100px;
         display: flex;
         flex-direction: row;
-        width: 400px; }
+        width: 400px;
+        margin: 0px;
+        align-self: center; }
         .body-container #header-section #nav-section .nav-ul li {
           margin-right: 10%; }
     .body-container .carousel-item img {
       max-height: 500px; } }
 @media all and (min-width: 1024px) {
   .body-container {
-    grid-template-rows: 65px 600px 544px 100px; }
+    grid-template-rows: 100px 600px 544px 100px; }
     .body-container #main-section {
       display: flex;
       flex-direction: row;

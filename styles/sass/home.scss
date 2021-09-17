@@ -76,11 +76,6 @@ html {
                 transition: 0.2s ease-out;
                 width: 20px;
             }
-            .footer-bar {
-                height: 2px;
-                width: 100%;
-                background: #666058;
-            }
         }
     }
     #main-section {
@@ -152,7 +147,7 @@ html {
 }
 @media all and (min-width: 768px) {
     .body-container {
-        grid-template-rows: 65px 600px 535px 50px;
+        grid-template-rows: 100px 600px 535px 100px;
         #header-section {
             #nav-section {
                 display: flex;
@@ -175,6 +170,8 @@ html {
                     display: flex;
                     flex-direction: row;
                     width: 400px;
+                    margin: 0px;
+                    align-self: center;
                     li {
                     margin-right: 10%;
                     }
@@ -190,7 +187,7 @@ html {
 }
 @media all and (min-width: 1024px) {
     .body-container {
-        grid-template-rows: 65px 600px 544px 100px;
+        grid-template-rows: 100px 600px 544px 100px;
         #main-section {
             display: flex;
             flex-direction: row;
