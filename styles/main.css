@@ -73,8 +73,9 @@ html {
     justify-content: center; }
     .body-container #main-section .main-container h1 {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
-      text-align: center; }
+      font-family: 'Raleway', sans-serif;
+      text-align: center;
+      letter-spacing: 8px; }
     .body-container #main-section .parallax {
       /* The image used */
       background-image: url("/assets/parallax-photo-2.jpg");
