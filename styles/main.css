@@ -4,7 +4,7 @@ html {
 
 .body-container {
   display: grid;
-  grid-template-rows: 102px 600px 465px 65px; }
+  grid-template-rows: 102px 600px 300px 544px 100px; }
   .body-container #header-section {
     background-color: #ffff;
     box-shadow: 0px 0px 5px #464646; }
@@ -40,10 +40,7 @@ html {
       width: 100%;
       z-index: 100; }
       .body-container #header-section #nav-section .nav-ul li {
-        list-style: none;
-        margin: 5px;
-        padding: 15px;
-        width: 40px; }
+        list-style: none; }
         .body-container #header-section #nav-section .nav-ul li .sublist {
           display: none; }
         .body-container #header-section #nav-section .nav-ul li a {
@@ -123,7 +120,7 @@ html {
 
 @media all and (min-width: 768px) {
   .body-container {
-    grid-template-rows: 102px 600px 535px 100px; }
+    grid-template-rows: 102px 600px 300px 544px 100px; }
     .body-container #header-section #nav-section {
       display: flex;
       flex-direction: row;
@@ -142,14 +139,14 @@ html {
         flex-direction: row;
         width: 400px;
         margin: 0px;
-        align-self: center; }
-        .body-container #header-section #nav-section .nav-ul li {
-          margin-right: 10%; }
+        align-self: center;
+        justify-content: space-between;
+        margin-right: 20px; }
     .body-container .carousel-item img {
       max-height: 500px; } }
 @media all and (min-width: 1024px) {
   .body-container {
-    grid-template-rows: 102px 600px 544px 100px; }
+    grid-template-rows: 102px 600px 300px 544px 100px; }
     .body-container #main-section {
       display: flex;
       flex-direction: row;
@@ -174,9 +171,7 @@ html {
         margin: 0px;
         padding: 0px; }
         .body-container #nav-section .nav-ul li {
-          list-style: none;
-          margin: 10px;
-          margin-right: 70px; }
+          list-style: none; }
           .body-container #nav-section .nav-ul li a {
             text-decoration: none; }
           .body-container #nav-section .nav-ul li a:hover {
