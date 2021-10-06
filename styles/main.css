@@ -35,7 +35,7 @@ html {
       position: absolute;
       max-height: 0;
       transition: max-height 0.3s ease;
-      background-color: blanchedalmond;
+      background-color: #e2d4c7;
       overflow: hidden;
       width: 100%;
       z-index: 100; }
@@ -100,6 +100,10 @@ html {
     .body-container .parallax h2 {
       font-family: 'Raleway', sans-serif;
       letter-spacing: 9px; }
+  .body-container #description-section .container {
+    padding: 10px; }
+    .body-container #description-section .container p, .body-container #description-section .container ul {
+      font-family: 'Raleway', sans-serif; }
   .body-container #products-section {
     display: flex;
     flex-direction: column;

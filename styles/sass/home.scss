@@ -41,7 +41,7 @@ html {
                 position: absolute;
                 max-height: 0;
                 transition: max-height 0.3s ease;
-                background-color: blanchedalmond;
+                background-color: #e2d4c7;
                 overflow: hidden;
                 width: 100%;
                 z-index: 100;
@@ -122,6 +122,14 @@ html {
         h2 {
             font-family: 'Raleway', sans-serif;
             letter-spacing: 9px;
+        }
+    }
+    #description-section {
+        .container {
+            padding: 10px;
+            p, ul {
+                font-family: 'Raleway', sans-serif;
+            }
         }
     }
     #products-section {
