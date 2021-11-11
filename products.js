@@ -64,4 +64,10 @@ productos.forEach((producto) => {
          "border" : "none",
          "cursor" : "pointer"        
      });
+     $("#btn-compra").click(function() {
+         $("#btn-compra")
+         .slideUp()
+         .delay(1000)
+         .slideDown()
+     })
 
