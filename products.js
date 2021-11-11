@@ -30,8 +30,9 @@ productos.forEach((producto) => {
   
       $("#productsSection").append(product);
 
-      $(".product-container").hide();
-      $(".product-container").fadeIn("slow");
+      $(".product-container").fadeOut(3, function(){
+          $(".product-container").fadeIn(800)
+      });
 
       $(`#cart-${producto.id}`).click(function() {
           carrito.push(producto)
@@ -49,3 +50,7 @@ productos.forEach((producto) => {
           $("#cart-section").append(product);
         });
     });
+    // let btnCompra = document.createElement("button");
+    // $("#cart-section").append(btnCompra);
+    // btnCompra.innerHTML = ("Finalizar compra");
+
