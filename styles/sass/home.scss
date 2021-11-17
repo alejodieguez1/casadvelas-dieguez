@@ -129,13 +129,13 @@ html {
         }
     }
     #description-section {
-        background-color: #D9C09F;
+        background-color: #ffff;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.322);
         .container {
             padding: 30px;
             p, ul {
-                color: #ffff;
-                font-family: 'Raleway', sans-serif;
+                color: #D9C09F;
+                font-family: 'Recoleta';
             }
         }
     }
@@ -143,7 +143,7 @@ html {
         display: flex;
         flex-direction: column;
         padding: 10px;
-        background-color: #D9C09F;
+        background-color: #ffff;
         .home-product {
             display: flex;
             align-items: center;
@@ -151,7 +151,7 @@ html {
             flex-direction: column;
             padding: 20px;
             margin: 10px;
-            background-color: #fff;
+            background-color: #E9DCC9;
             border-radius: 5px;
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233);
             img {
