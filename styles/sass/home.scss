@@ -30,7 +30,7 @@ html {
                 flex-direction: column;
                 align-self: center;
                 .bar {
-                    background-color: #bba69c;
+                    background-color: #D9C09F;
                     margin: 2px;
                     height: 2px;
                     width: 19px;
@@ -41,7 +41,7 @@ html {
                 position: absolute;
                 max-height: 0;
                 transition: max-height 0.3s ease;
-                background-color: #e2d4c7;
+                background-color: #D9C09F;
                 overflow: hidden;
                 width: 100%;
                 z-index: 100;
@@ -107,6 +107,9 @@ html {
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            img {
+                width: 270px;
+            }
         }
     }
     .parallax {
@@ -120,16 +123,18 @@ html {
         justify-content: center;
         align-items: center;
         h2 {
-            font-family: 'Raleway', sans-serif;
+            color: #fff;
+            font-family: 'Recoleta';
             letter-spacing: 9px;
         }
     }
     #description-section {
-        background-color: #fff1e2;
+        background-color: #D9C09F;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.322);
         .container {
             padding: 30px;
             p, ul {
+                color: #ffff;
                 font-family: 'Raleway', sans-serif;
             }
         }
@@ -138,7 +143,7 @@ html {
         display: flex;
         flex-direction: column;
         padding: 10px;
-        background-color: #fff1e2;
+        background-color: #D9C09F;
         .home-product {
             display: flex;
             align-items: center;
