@@ -323,26 +323,11 @@ html {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                p {
-                    color: #bba69c;
-                    margin: 0;
-                    margin-top: 9px;
-                }
-                p:hover {
-                    transition: 0.2s;
-                    color: #2F2A27;
-                }
                 .social-logos {
                     padding: 9px;
                 }
                 a{
-                    color: #bba69c;
                     margin: 10px;
-                }
-                a:hover {
-                    color: #2F2A27;
-                    font-size: 17px;
-                    transition: 0.2s;
                 }
             }
         }

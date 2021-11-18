@@ -240,22 +240,10 @@ html {
       display: flex;
       flex-direction: row;
       justify-content: space-between; }
-      .body-container #footer-section .footer-container p {
-        color: #bba69c;
-        margin: 0;
-        margin-top: 9px; }
-      .body-container #footer-section .footer-container p:hover {
-        transition: 0.2s;
-        color: #2F2A27; }
       .body-container #footer-section .footer-container .social-logos {
         padding: 9px; }
       .body-container #footer-section .footer-container a {
-        color: #bba69c;
-        margin: 10px; }
-      .body-container #footer-section .footer-container a:hover {
-        color: #2F2A27;
-        font-size: 17px;
-        transition: 0.2s; } }
+        margin: 10px; } }
 html {
   font-size: 16px;
   font-family: 'Roboto', sans-serif; }
