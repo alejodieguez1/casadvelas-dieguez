@@ -200,7 +200,7 @@ html {
 }
 @media all and (min-width: 768px) {
     .body-container {
-        grid-template-rows: 102px 600px 300px 544px 1430px 100px;
+        grid-template-rows: 102px 600px 270px 544px 1430px 100px;
         #header-section {
             #nav-section {
                 display: flex;
@@ -233,11 +233,23 @@ html {
                 }
             }
         }
+        #description-section {
+            .container {
+                p {
+                    font-size: 1.2rem;
+                }
+                ul {
+                    li {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
     }
 }
 @media all and (min-width: 1024px) {
     .body-container {
-        grid-template-rows: 102px 600px 300px 544px 100px;
+        grid-template-rows: 102px 600px 250px 544px 1430px 100px;
         #main-section {
             display: flex;
             flex-direction: row;
@@ -262,7 +274,6 @@ html {
             }
             .nav-ul {
                 margin: 0px;
-                padding: 0px;
                 li {
                     list-style: none;
                     a {
@@ -272,6 +283,37 @@ html {
                         text-decoration: underline 1px;
                         font-size: 18px;
                         transition: 0.5s;
+                    }
+                }
+            }
+        }
+        #description-section {
+            .container {
+                p {
+                    font-size: 1.4rem;
+                }
+                ul {
+                    li {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+        #products-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .home-product {
+                img {
+                    height: 500px;
+                }
+                p {
+                    font-size: 1.3rem;
+                }
+                button {
+                    width: 200px;
+                    height: 60px;
+                    a {
+                        font-size: 1.2rem;
                     }
                 }
             }

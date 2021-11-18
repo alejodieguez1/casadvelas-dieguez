@@ -161,7 +161,7 @@ html {
 
 @media all and (min-width: 768px) {
   .body-container {
-    grid-template-rows: 102px 600px 300px 544px 1430px 100px; }
+    grid-template-rows: 102px 600px 270px 544px 1430px 100px; }
     .body-container #header-section #nav-section {
       display: flex;
       flex-direction: row;
@@ -184,10 +184,14 @@ html {
         justify-content: space-between;
         margin-right: 20px; }
         .body-container #header-section #nav-section .nav-ul li {
-          margin-top: 0px; } }
+          margin-top: 0px; }
+    .body-container #description-section .container p {
+      font-size: 1.2rem; }
+    .body-container #description-section .container ul li {
+      font-size: 1.2rem; } }
 @media all and (min-width: 1024px) {
   .body-container {
-    grid-template-rows: 102px 600px 300px 544px 100px; }
+    grid-template-rows: 102px 600px 250px 544px 1430px 100px; }
     .body-container #main-section {
       display: flex;
       flex-direction: row;
@@ -207,8 +211,7 @@ html {
           transform: scale(1.4);
           transition: 0.5s; }
       .body-container #nav-section .nav-ul {
-        margin: 0px;
-        padding: 0px; }
+        margin: 0px; }
         .body-container #nav-section .nav-ul li {
           list-style: none; }
           .body-container #nav-section .nav-ul li a {
@@ -217,6 +220,22 @@ html {
             text-decoration: underline 1px;
             font-size: 18px;
             transition: 0.5s; }
+    .body-container #description-section .container p {
+      font-size: 1.4rem; }
+    .body-container #description-section .container ul li {
+      font-size: 1.4rem; }
+    .body-container #products-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+      .body-container #products-section .home-product img {
+        height: 500px; }
+      .body-container #products-section .home-product p {
+        font-size: 1.3rem; }
+      .body-container #products-section .home-product button {
+        width: 200px;
+        height: 60px; }
+        .body-container #products-section .home-product button a {
+          font-size: 1.2rem; }
     .body-container #footer-section .footer-container {
       display: flex;
       flex-direction: row;
