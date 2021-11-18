@@ -9,7 +9,7 @@ html {
   .body-container #header-section {
     background-color: #ffff;
     box-shadow: 0px 0px 5px #464646; }
-    .body-container #header-section .footer-bar {
+    .body-container #header-section .spacer-bar {
       height: 2px;
       width: 100%;
       background: #666058; }
@@ -116,7 +116,7 @@ html {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    background-color: #ffff; }
+    background-color: #E9DCC9; }
     .body-container #products-section .home-product {
       display: flex;
       align-items: center;
@@ -124,33 +124,27 @@ html {
       flex-direction: column;
       padding: 20px;
       margin: 10px;
-      background-color: #E9DCC9;
-      border-radius: 5px;
+      background-color: #ffff;
       box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233); }
       .body-container #products-section .home-product img {
-        height: 330.5px;
-        border-radius: 5px; }
+        height: 330.5px; }
       .body-container #products-section .home-product p {
         margin-top: 12px;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Recoleta';
         letter-spacing: 2px; }
       .body-container #products-section .home-product button {
-        background: #ffff;
+        background: #E9DCC9;
         width: 130px;
         border: none;
-        border-radius: 5px;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.062); }
         .body-container #products-section .home-product button a {
-          color: black;
+          color: #ffff;
+          font-family: 'Recoleta';
           text-decoration: none; }
-      .body-container #products-section .home-product button:hover {
-        transform: scale(1.06);
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.219);
-        transition: 0.2s; }
   .body-container #footer-section {
     background: #ffff;
     border-top: 2px black; }
-    .body-container #footer-section .footer-bar {
+    .body-container #footer-section .spacer-bar {
       height: 2px;
       width: 100%;
       background: #666058; }
@@ -167,11 +161,11 @@ html {
         .body-container #footer-section .footer-container .social-logos a {
           margin: 10px; }
           .body-container #footer-section .footer-container .social-logos a i {
-            color: #AEA293; }
+            color: #E9DCC9; }
 
 @media all and (min-width: 768px) {
   .body-container {
-    grid-template-rows: 102px 600px 300px 544px 100px; }
+    grid-template-rows: 102px 600px 300px 544px 1430px 100px; }
     .body-container #header-section #nav-section {
       display: flex;
       flex-direction: row;

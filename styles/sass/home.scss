@@ -8,7 +8,7 @@ html {
     #header-section {
         background-color: #ffff;
         box-shadow: 0px 0px 5px rgb(70, 70, 70);
-        .footer-bar {
+        .spacer-bar {
             height: 2px;
             width: 100%;
             background: #666058;
@@ -143,7 +143,7 @@ html {
         display: flex;
         flex-direction: column;
         padding: 10px;
-        background-color: #ffff;
+        background-color: #E9DCC9;
         .home-product {
             display: flex;
             align-items: center;
@@ -151,40 +151,33 @@ html {
             flex-direction: column;
             padding: 20px;
             margin: 10px;
-            background-color: #E9DCC9;
-            border-radius: 5px;
+            background-color: #ffff;
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233);
             img {
                 height: 330.5px;
-                border-radius: 5px;
             }
             p {
                 margin-top: 12px;
-                font-family: 'Raleway', sans-serif;
+                font-family: 'Recoleta';
                 letter-spacing: 2px;
             }
             button {
-                background: #ffff;
+                background: #E9DCC9;
                 width: 130px;
                 border: none;
-                border-radius: 5px;
                 box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.062);
                 a {
-                    color: black;
+                    color: #ffff;
+                    font-family: 'Recoleta';
                     text-decoration: none;
                 }
-            }
-            button:hover {
-                transform: scale(1.06);
-                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.219);
-                transition: 0.2s;
             }
         }
     }
     #footer-section {
         background: #ffff;
         border-top: 2px black;
-        .footer-bar {
+        .spacer-bar {
             height: 2px;
             width: 100%;
             background: #666058;
@@ -203,7 +196,7 @@ html {
                 a {
                     margin: 10px;
                     i {
-                        color: #AEA293;
+                        color: #E9DCC9;
                     }
                 }
             }
@@ -212,7 +205,7 @@ html {
 }
 @media all and (min-width: 768px) {
     .body-container {
-        grid-template-rows: 102px 600px 300px 544px 100px;
+        grid-template-rows: 102px 600px 300px 544px 1430px 100px;
         #header-section {
             #nav-section {
                 display: flex;
