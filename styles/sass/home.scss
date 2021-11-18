@@ -46,6 +46,7 @@ html {
                 width: 100%;
                 z-index: 100;
                 li {
+                    margin-top: 40px;
                     list-style: none;
                     .sublist {
                         display: none;
@@ -88,12 +89,6 @@ html {
             display: flex;
             justify-content: center;
             align-items: center;
-            h1{
-               margin-bottom: 150px;
-               font-family: 'Raleway', sans-serif;
-               text-align: center;
-               letter-spacing: 9px;
-           }
         }
         .parallax {
             /* The image used */
@@ -232,12 +227,10 @@ html {
                     align-self: center;
                     justify-content: space-between;
                     margin-right: 20px;
+                    li {
+                        margin-top: 0px;
+                    }
                 }
-            }
-        }
-        .carousel-item {
-                img {
-                max-height: 500px;
             }
         }
     }
@@ -251,9 +244,6 @@ html {
             align-content: center;
             justify-content: center;
             .main-container {
-                h1 {
-                    margin: 70px;
-                }
                 width: 100%;
             }
         }

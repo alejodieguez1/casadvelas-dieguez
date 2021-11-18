@@ -41,6 +41,7 @@ html {
       width: 100%;
       z-index: 100; }
       .body-container #header-section #nav-section .nav-ul li {
+        margin-top: 40px;
         list-style: none; }
         .body-container #header-section #nav-section .nav-ul li .sublist {
           display: none; }
@@ -73,11 +74,6 @@ html {
       display: flex;
       justify-content: center;
       align-items: center; }
-      .body-container #main-section .main-container h1 {
-        margin-bottom: 150px;
-        font-family: 'Raleway', sans-serif;
-        text-align: center;
-        letter-spacing: 9px; }
     .body-container #main-section .parallax {
       /* The image used */
       background-image: url("/assets/parallax-photo-2.jpg");
@@ -187,8 +183,8 @@ html {
         align-self: center;
         justify-content: space-between;
         margin-right: 20px; }
-    .body-container .carousel-item img {
-      max-height: 500px; } }
+        .body-container #header-section #nav-section .nav-ul li {
+          margin-top: 0px; } }
 @media all and (min-width: 1024px) {
   .body-container {
     grid-template-rows: 102px 600px 300px 544px 100px; }
@@ -199,8 +195,6 @@ html {
       justify-content: center; }
       .body-container #main-section .main-container {
         width: 100%; }
-        .body-container #main-section .main-container h1 {
-          margin: 70px; }
     .body-container #nav-section {
       display: flex;
       flex-direction: row;
