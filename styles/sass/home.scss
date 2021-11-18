@@ -4,7 +4,7 @@ html {
 }
 .body-container {
     display: grid;
-    grid-template-rows: 102px 600px 300px 300px 1430px 100px;
+    grid-template-rows: 102px 600px 300px 300px 1900px 100px;
     #header-section {
         background-color: #ffff;
         box-shadow: 0px 0px 5px rgb(70, 70, 70);
@@ -53,9 +53,9 @@ html {
                     }
                     a {
                         font-size: 1.2rem;
-                        color: black;
+                        color: #ffff;
                         text-decoration: none;
-                        font-family: 'Raleway', sans-serif;
+                        font-family: 'Recoleta';
                     }
                 }
             }
@@ -157,7 +157,7 @@ html {
                 letter-spacing: 2px;
             }
             button {
-                background: #E9DCC9;
+                background: #D9C09F;
                 width: 130px;
                 border: none;
                 box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.062);
@@ -191,7 +191,7 @@ html {
                 a {
                     margin: 10px;
                     i {
-                        color: #E9DCC9;
+                        color: #D9C09F;
                     }
                 }
             }
@@ -200,7 +200,7 @@ html {
 }
 @media all and (min-width: 768px) {
     .body-container {
-        grid-template-rows: 102px 600px 270px 544px 1430px 100px;
+        grid-template-rows: 102px 600px 270px 544px 1900px 100px;
         #header-section {
             #nav-section {
                 display: flex;
@@ -229,6 +229,9 @@ html {
                     margin-right: 20px;
                     li {
                         margin-top: 0px;
+                        a {
+                            color: #D9C09F;
+                        }
                     }
                 }
             }

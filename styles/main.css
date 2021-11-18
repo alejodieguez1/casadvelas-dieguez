@@ -5,7 +5,7 @@ html {
 
 .body-container {
   display: grid;
-  grid-template-rows: 102px 600px 300px 300px 1430px 100px; }
+  grid-template-rows: 102px 600px 300px 300px 1900px 100px; }
   .body-container #header-section {
     background-color: #ffff;
     box-shadow: 0px 0px 5px #464646; }
@@ -47,9 +47,9 @@ html {
           display: none; }
         .body-container #header-section #nav-section .nav-ul li a {
           font-size: 1.2rem;
-          color: black;
+          color: #ffff;
           text-decoration: none;
-          font-family: 'Raleway', sans-serif; }
+          font-family: 'Recoleta'; }
     .body-container #header-section #nav-section #hmb-menu:checked ~ .nav-ul {
       max-height: 1000px;
       height: 100%;
@@ -129,7 +129,7 @@ html {
         font-family: 'Recoleta';
         letter-spacing: 2px; }
       .body-container #products-section .home-product button {
-        background: #E9DCC9;
+        background: #D9C09F;
         width: 130px;
         border: none;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.062); }
@@ -157,11 +157,11 @@ html {
         .body-container #footer-section .footer-container .social-logos a {
           margin: 10px; }
           .body-container #footer-section .footer-container .social-logos a i {
-            color: #E9DCC9; }
+            color: #D9C09F; }
 
 @media all and (min-width: 768px) {
   .body-container {
-    grid-template-rows: 102px 600px 270px 544px 1430px 100px; }
+    grid-template-rows: 102px 600px 270px 544px 1900px 100px; }
     .body-container #header-section #nav-section {
       display: flex;
       flex-direction: row;
@@ -185,6 +185,8 @@ html {
         margin-right: 20px; }
         .body-container #header-section #nav-section .nav-ul li {
           margin-top: 0px; }
+          .body-container #header-section #nav-section .nav-ul li a {
+            color: #D9C09F; }
     .body-container #description-section .container p {
       font-size: 1.2rem; }
     .body-container #description-section .container ul li {
