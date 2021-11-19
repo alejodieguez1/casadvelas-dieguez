@@ -132,11 +132,10 @@ html {
         background: #D9C09F;
         width: 130px;
         border: none;
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.062); }
-        .body-container #products-section .home-product button a {
-          color: #ffff;
-          font-family: 'Recoleta';
-          text-decoration: none; }
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.062);
+        color: #ffff;
+        font-family: 'Recoleta';
+        text-decoration: none; }
   .body-container #footer-section {
     background: #ffff;
     border-top: 2px black; }
@@ -218,10 +217,9 @@ html {
           list-style: none; }
           .body-container #nav-section .nav-ul li a {
             text-decoration: none; }
-          .body-container #nav-section .nav-ul li a:hover {
-            text-decoration: underline 1px;
-            font-size: 18px;
-            transition: 0.5s; }
+        .body-container #nav-section .nav-ul li:hover {
+          text-decoration: #D9C09F underline 2px;
+          transition: 0.5s; }
     .body-container #description-section .container p {
       font-size: 1.4rem; }
     .body-container #description-section .container ul li {
@@ -235,9 +233,8 @@ html {
         font-size: 1.3rem; }
       .body-container #products-section .home-product button {
         width: 200px;
-        height: 60px; }
-        .body-container #products-section .home-product button a {
-          font-size: 1.2rem; }
+        height: 60px;
+        font-size: 1.2rem; }
     .body-container #footer-section .footer-container {
       display: flex;
       flex-direction: row;
@@ -245,7 +242,10 @@ html {
       .body-container #footer-section .footer-container .social-logos {
         padding: 9px; }
       .body-container #footer-section .footer-container a {
-        margin: 10px; } }
+        margin: 10px; }
+        .body-container #footer-section .footer-container a i:hover {
+          transform: scale(1.1);
+          transition: 0.5s; } }
 html {
   font-size: 16px;
   font-family: 'Roboto', sans-serif; }

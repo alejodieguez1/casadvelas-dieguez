@@ -161,11 +161,9 @@ html {
                 width: 130px;
                 border: none;
                 box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.062);
-                a {
-                    color: #ffff;
-                    font-family: 'Recoleta';
-                    text-decoration: none;
-                }
+                color: #ffff;
+                font-family: 'Recoleta';
+                text-decoration: none;
             }
         }
     }
@@ -282,11 +280,10 @@ html {
                     a {
                         text-decoration: none;
                     }
-                    a:hover {
-                        text-decoration: underline 1px;
-                        font-size: 18px;
-                        transition: 0.5s;
-                    }
+                }
+                li:hover {
+                    text-decoration: #D9C09F underline 2px;
+                    transition: 0.5s;
                 }
             }
         }
@@ -315,9 +312,7 @@ html {
                 button {
                     width: 200px;
                     height: 60px;
-                    a {
-                        font-size: 1.2rem;
-                    }
+                    font-size: 1.2rem;
                 }
             }
         }
@@ -331,6 +326,10 @@ html {
                 }
                 a{
                     margin: 10px;
+                    i:hover {
+                        transform: scale(1.1);
+                        transition: 0.5s;
+                    }
                 }
             }
         }
