@@ -17,6 +17,8 @@ html {
       margin-left: 10px;
       width: 100px;
       height: 100px; }
+    .body-container #header-section #nav-section img:hover {
+      cursor: pointer; }
     .body-container #header-section #nav-section .hmb-menu {
       display: none; }
     .body-container #header-section #nav-section .hmb-label {
@@ -43,8 +45,6 @@ html {
       .body-container #header-section #nav-section .nav-ul li {
         margin-top: 40px;
         list-style: none; }
-        .body-container #header-section #nav-section .nav-ul li .sublist {
-          display: none; }
         .body-container #header-section #nav-section .nav-ul li a {
           font-size: 1.2rem;
           color: #ffff;

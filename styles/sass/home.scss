@@ -14,11 +14,14 @@ html {
             background: #666058;
         }
         #nav-section {
-             img {
-                 margin-left: 10px;
-                 width: 100px;
-                 height: 100px;
-             }
+            img {
+                margin-left: 10px;
+                width: 100px;
+                height: 100px;
+            }
+            img:hover {
+                cursor: pointer;
+            }
             .hmb-menu {
                 display: none;
             }
@@ -48,9 +51,6 @@ html {
                 li {
                     margin-top: 40px;
                     list-style: none;
-                    .sublist {
-                        display: none;
-                    }
                     a {
                         font-size: 1.2rem;
                         color: #ffff;
