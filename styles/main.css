@@ -235,6 +235,10 @@ html {
         width: 200px;
         height: 60px;
         font-size: 1.2rem; }
+      .body-container #products-section .home-product button:hover {
+        transform: scale(1.03);
+        transition: 0.2s;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.301); }
     .body-container #footer-section .footer-container {
       display: flex;
       flex-direction: row;
