@@ -45,20 +45,3 @@ productos.forEach((producto) => {
     $("#cart-section").append(product);
   });
 });
-let btnCompra = document.createElement("button");
-$("#cart-section").append(btnCompra);
-btnCompra.innerHTML = "Finalizar compra";
-btnCompra.type = "button";
-btnCompra.id = "btn-compra";
-$("#btn-compra").css({
-  width: "150px",
-  height: "150px",
-  "background-color": "#e2d4c7",
-  "box-shadow": "0px 0px 5px black",
-  "border-radius": "5px",
-  border: "none",
-  cursor: "pointer",
-});
-$("#btn-compra").click(function () {
-  $("#btn-compra").slideUp().delay(1000).slideDown();
-});
