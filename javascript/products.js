@@ -17,7 +17,7 @@ productos.forEach((producto) => {
   product.innerHTML = `
       <div class="product">
       <img src="../assets/300x300.png" alt="Producto relacionado a velas, decoracion, etc">
-      <h5>${producto.producto}</h5>
+      <p>${producto.producto}</p>
       <p>${producto.precio}</p>
       <button id="cart-${producto.id}" type="button">Agregar a carrito</button>
       </div>`;
