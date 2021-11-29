@@ -1,64 +1,65 @@
 html {
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
 }
 .productsBody-container {
     display: grid;
-    grid-template-rows: 65px 4400px 100px;
+    grid-template-rows: 106px 4400px 100px;
     background: #bba69c;
-
     #header-section {
         background-color: #ffff;
         box-shadow: 0px 0px 5px rgb(70, 70, 70);
-            #nav-section {
-                img {
-                    margin-left: 10px;
-                    width: 60px;
-                    height: 60px;
+        .spacer-bar {
+            height: 2px;
+            width: 100%;
+            background: #666058;
+        }
+        #nav-section {
+            img {
+                margin-left: 10px;
+                width: 100px;
+                height: 100px;
+            }
+            img:hover {
+                cursor: pointer;
+            }
+            .hmb-menu {
+                display: none;
+            }
+            .hmb-label {
+                float: right;
+                margin: 40px;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                .bar {
+                    background-color: #D9C09F;
+                    margin: 2px;
+                    height: 2px;
+                    width: 19px;
+                    border-radius: 5px;
                 }
-                .hmb-menu {
-                    display: none;
-                }
-                .hmb-label {
-                    float: right;
-                    margin: 22px;
-                    cursor: pointer;
-                    display: flex;
-                    flex-direction: column;
-                    align-self: center;
-                    .bar {
-                        background-color: #bba69c;
-                        margin: 2px;
-                        height: 2px;
-                        width: 19px;
-                        border-radius: 5px;
+            }
+            .nav-ul {
+                position: absolute;
+                max-height: 0;
+                transition: max-height 0.3s ease;
+                background-color: #D9C09F;
+                overflow: hidden;
+                width: 100%;
+                z-index: 100;
+                margin: 0px;
+                li {
+                    margin-top: 40px;
+                    list-style: none;
+                    a {
+                        font-size: 1.2rem;
+                        color: #ffff;
+                        text-decoration: none;
+                        font-family: 'Recoleta';
                     }
                 }
-                .nav-ul {
-                    margin: 0;
-                    position: absolute;
-                    max-height: 0;
-                    transition: max-height 0.2s ease;
-                    background-color: blanchedalmond;
-                    overflow: hidden;
-                    width: 100%;
-                    z-index: 100;
-                    li {
-                        list-style: none;
-                        margin: 5px;
-                        padding: 15px;
-                        width: 40px;
-                        .sublist {
-                            display: none;
-                        }
-                        a {
-                            font-size: 1.2rem;
-                            color: black;
-                            text-decoration: none;
-                            font-family: 'Dancing Script', cursive;
-                        }
-                    }
-                }
+            }
                 #hmb-menu:checked ~ .nav-ul {
                     max-height: 5000px;
                     height: 100%;
@@ -86,13 +87,15 @@ html {
         text-align: center;
         #productsSection {
             .product-container {
-                background-color: rgb(248, 240, 228);
+                background-color: #ffff;
                 margin: 10px;
                 padding: 10px;
-                border-radius: 5px;
-                box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.397);
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233);
                 .product {
                     margin: 10px;
+                    h5 {
+                        font-family: 'Recoleta';
+                    }
                 }
             }
         }

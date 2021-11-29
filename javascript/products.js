@@ -20,7 +20,6 @@ productos.forEach((producto) => {
       <h5>${producto.producto}</h5>
       <p>${producto.precio}</p>
       <button id="cart-${producto.id}" type="button">Agregar a carrito</button>
-      </div>
       </div>`;
 
   $("#productsSection").append(product);
