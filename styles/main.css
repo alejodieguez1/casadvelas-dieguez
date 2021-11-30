@@ -318,7 +318,7 @@ html {
       transition: 0.2s ease-out;
       width: 20px; }
   .productsBody-container #mainProducts-section, .productsBody-container #cart-section {
-    background: #bba69c;
+    background: #E9DCC9;
     text-align: center; }
     .productsBody-container #mainProducts-section #productsSection .product-container, .productsBody-container #cart-section #productsSection .product-container {
       background-color: #ffff;
