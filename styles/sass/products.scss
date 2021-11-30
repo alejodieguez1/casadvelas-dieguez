@@ -109,9 +109,6 @@ html {
                 }
             }
         }
-        #asideSection {
-            display: none;
-        }
     }
     #footer-section {
         background: #ffff;
@@ -144,7 +141,7 @@ html {
 }    
 @media all and (min-width: 768px) {
     .productsBody-container {
-        grid-template-rows: 65px 4400px 100px;
+        grid-template-rows: 102px 4400px 100px;
         #header-section {
             #nav-section {
                 display: flex;
@@ -169,6 +166,9 @@ html {
                     width: 480px;
                     li {
                     margin-right: 10%;
+                    a {
+                        color: #D9C09F;
+                    }
                     }
                 }
             }
@@ -176,48 +176,12 @@ html {
         #mainProducts-section {
             display: grid;
             grid-template-columns: 2fr 1fr;
-            #asideSection {
-                display: block;
-                background-color: rgb(248, 240, 228);
-                margin: 10px;
-                border-radius: 5px;
-                box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.397);
-                height: 9.7%;
-                ul {
-                    font-size: 1.2rem;
-                    display: flex;
-                    flex-direction: column;
-                    align-content: center;
-                    justify-content: center;
-                    padding: 40px;
-                    font-family: 'Dancing Script', cursive;
-                    li {
-                        margin: 30px;
-                        list-style: none;
-                        a {
-                            text-decoration: none;
-                            color: gray;
-                        }
-                        a:hover {
-                            color: rgb(85, 85, 85);
-                            transition: 0.2s;
-                        }
-                    }
-                    .line {
-                        display: block;
-                        width: 60%;
-                        height: 1px;
-                        background: gray;
-                        align-self: center;
-                    }
-                }
-            }
         }
     }
 }
 @media all and (min-width: 1024px) {
     .productsBody-container {
-        grid-template-rows: 65px 2239px 80px;
+        grid-template-rows: 102px 2239px 80px;
         #mainProducts-section {
             display: grid;
             grid-template-columns: 8fr 1fr;

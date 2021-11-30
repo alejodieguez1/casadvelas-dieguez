@@ -338,8 +338,6 @@ html {
           color: #ffff;
           font-family: 'Recoleta';
           text-decoration: none; }
-    .productsBody-container #mainProducts-section #asideSection, .productsBody-container #cart-section #asideSection {
-      display: none; }
   .productsBody-container #footer-section {
     background: #ffff;
     border-top: 2px black; }
@@ -364,7 +362,7 @@ html {
 
 @media all and (min-width: 768px) {
   .productsBody-container {
-    grid-template-rows: 65px 4400px 100px; }
+    grid-template-rows: 102px 4400px 100px; }
     .productsBody-container #header-section #nav-section {
       display: flex;
       flex-direction: row;
@@ -384,42 +382,14 @@ html {
         width: 480px; }
         .productsBody-container #header-section #nav-section .nav-ul li {
           margin-right: 10%; }
+          .productsBody-container #header-section #nav-section .nav-ul li a {
+            color: #D9C09F; }
     .productsBody-container #mainProducts-section {
       display: grid;
-      grid-template-columns: 2fr 1fr; }
-      .productsBody-container #mainProducts-section #asideSection {
-        display: block;
-        background-color: #f8f0e4;
-        margin: 10px;
-        border-radius: 5px;
-        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.397);
-        height: 9.7%; }
-        .productsBody-container #mainProducts-section #asideSection ul {
-          font-size: 1.2rem;
-          display: flex;
-          flex-direction: column;
-          align-content: center;
-          justify-content: center;
-          padding: 40px;
-          font-family: 'Dancing Script', cursive; }
-          .productsBody-container #mainProducts-section #asideSection ul li {
-            margin: 30px;
-            list-style: none; }
-            .productsBody-container #mainProducts-section #asideSection ul li a {
-              text-decoration: none;
-              color: gray; }
-            .productsBody-container #mainProducts-section #asideSection ul li a:hover {
-              color: #555555;
-              transition: 0.2s; }
-          .productsBody-container #mainProducts-section #asideSection ul .line {
-            display: block;
-            width: 60%;
-            height: 1px;
-            background: gray;
-            align-self: center; } }
+      grid-template-columns: 2fr 1fr; } }
 @media all and (min-width: 1024px) {
   .productsBody-container {
-    grid-template-rows: 65px 2239px 80px; }
+    grid-template-rows: 102px 2239px 80px; }
     .productsBody-container #mainProducts-section {
       display: grid;
       grid-template-columns: 8fr 1fr; }
