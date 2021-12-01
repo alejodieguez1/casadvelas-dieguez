@@ -113,7 +113,7 @@ html {
     #footer-section {
         background: #ffff;
         border-top: 2px black;
-        .footer-bar {
+        .spacer-bar {
             height: 2px;
             width: 100%;
             background: #666058;
@@ -125,6 +125,7 @@ html {
             img {
                 height: 100px;
                 width: 100px;
+                cursor: pointer;
             }
             .social-logos {
                 margin-right: 10px;
@@ -132,7 +133,7 @@ html {
                 a {
                     margin: 10px;
                     i {
-                        color: #AEA293;
+                        color: #D9C09F;
                     }
                 }
             }
@@ -163,19 +164,19 @@ html {
                     max-height: 100px;
                     display: flex;
                     flex-direction: row;
-                    width: 480px;
+                    width: 400px;
+                    margin: 0px;
+                    align-self: center;
+                    justify-content: space-between;
+                    margin-right: 20px;
                     li {
-                    margin-right: 10%;
-                    a {
-                        color: #D9C09F;
-                    }
+                        margin-top: 0px;
+                        a {
+                            color: #D9C09F;
+                        }
                     }
                 }
             }
-        }
-        #mainProducts-section {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
         }
     }
 }
@@ -183,11 +184,23 @@ html {
     .productsBody-container {
         grid-template-rows: 102px 2239px 80px;
         #mainProducts-section {
-            display: grid;
-            grid-template-columns: 8fr 1fr;
             #productsSection {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                .product-container {
+                    .product {
+                        button {
+                            width: 200px;
+                            height: 60px;
+                            font-size: 1.2rem;
+                        }
+                        button:hover {
+                            transform: scale(1.03);
+                            transition: 0.2s;
+                            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.301);
+                        }
+                    }
+                }
             }
             #asideSection {
                 display: block;
@@ -241,19 +254,15 @@ html {
             }
             .nav-ul {
                 margin: 0px;
-                padding: 0px;
                 li {
                     list-style: none;
-                    margin: 10px;
-                    margin-right: 70px;
                     a {
                         text-decoration: none;
                     }
-                    a:hover {
-                        text-decoration: underline 1px;
-                        font-size: 18px;
-                        transition: 0.5s;
-                    }
+                }
+                li:hover {
+                    text-decoration: #D9C09F underline 2px;
+                    transition: 0.5s;
                 }
             }
         }
@@ -262,26 +271,15 @@ html {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                p {
-                    color: #bba69c;
-                    margin: 0;
-                    margin-top: 9px;
-                }
-                p:hover {
-                    transition: 0.2s;
-                    color: #2F2A27;
-                }
                 .social-logos {
                     padding: 9px;
                 }
                 a{
-                    color: #bba69c;
                     margin: 10px;
-                }
-                a:hover {
-                    color: #2F2A27;
-                    font-size: 17px;
-                    transition: 0.2s;
+                    i:hover {
+                        transform: scale(1.1);
+                        transition: 0.5s;
+                    }
                 }
             }
         }
