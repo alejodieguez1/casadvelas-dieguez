@@ -8,7 +8,7 @@ $.getJSON(JSON, function (respuesta, estado) {
 
       product.innerHTML = `
         <div class="product">
-        <img src="../assets/300x300.png" alt="Producto relacionado a velas, decoracion, etc">
+        <img src="${producto.image}" alt="Producto relacionado a velas, decoracion, etc">
         <p>${producto.producto}</p>
         <p>${producto.precio}</p>
         <button id="cart-${producto.id}" class="btn-cart" type="button">Agregar a carrito</button>

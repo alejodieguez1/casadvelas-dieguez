@@ -329,6 +329,8 @@ html {
       box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233); }
       .productsBody-container #mainProducts-section #productsSection .product-container .product, .productsBody-container #cart-section #productsSection .product-container .product {
         margin: 10px; }
+        .productsBody-container #mainProducts-section #productsSection .product-container .product img, .productsBody-container #cart-section #productsSection .product-container .product img {
+          height: 500px; }
         .productsBody-container #mainProducts-section #productsSection .product-container .product p, .productsBody-container #cart-section #productsSection .product-container .product p {
           font-family: 'Recoleta';
           letter-spacing: 2px; }

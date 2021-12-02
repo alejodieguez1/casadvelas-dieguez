@@ -93,6 +93,9 @@ html {
                 box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233);
                 .product {
                     margin: 10px;
+                    img {
+                        height: 500px;
+                    }
                     p {
                         font-family: 'Recoleta';
                         letter-spacing: 2px;
