@@ -1,5 +1,5 @@
 [
-  { "id": 23, "producto": "Vela", "precio": "$56", "stock": 10, "image": "" },
+  { "id": 23, "producto": "Vela Tenesse", "precio": "$56", "stock": 10, "image": "../assets/tenesse-vela" },
   { "id": 24, "producto": "Cera", "precio": "$150", "stock": 25, "image": "" },
   { "id": 6, "producto": "Jarron", "precio": "$65", "stock": 5, "image": ""},
   { "id": 89, "producto": "Vela redonda", "precio": "$86", "stock": 7, "image": "" },
