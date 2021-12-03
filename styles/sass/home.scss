@@ -3,7 +3,7 @@ html {
 }
 .body-container {
     display: grid;
-    grid-template-rows: 102px 600px 300px 300px 1490px 100px;
+    grid-template-rows: 106px 600px 300px 300px 1490px 100px;
     #header-section {
         background-color: #ffff;
         box-shadow: 0px 0px 5px rgb(70, 70, 70);
@@ -48,6 +48,7 @@ html {
                 overflow: hidden;
                 width: 100%;
                 z-index: 100;
+                margin: 0;
                 li {
                     margin-top: 40px;
                     list-style: none;
