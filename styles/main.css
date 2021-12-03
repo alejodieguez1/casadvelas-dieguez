@@ -4,7 +4,7 @@ html {
 
 .body-container {
   display: grid;
-  grid-template-rows: 102px 600px 300px 300px 1900px 100px; }
+  grid-template-rows: 102px 600px 300px 300px 1490px 100px; }
   .body-container #header-section {
     background-color: #ffff;
     box-shadow: 0px 0px 5px #464646; }
@@ -396,13 +396,15 @@ html {
     .productsBody-container #productsSection .product-container .product {
       margin: 10px; }
       .productsBody-container #productsSection .product-container .product img {
-        width: 50%; } }
+        height: 330px; } }
 @media all and (min-width: 1024px) {
   .productsBody-container {
     grid-template-rows: 102px 2239px 80px; }
     .productsBody-container #mainProducts-section #productsSection {
       display: grid;
       grid-template-columns: 1fr 1fr; }
+      .productsBody-container #mainProducts-section #productsSection .product-container .product img {
+        height: 450px; }
       .productsBody-container #mainProducts-section #productsSection .product-container .product button {
         width: 200px;
         height: 60px;
@@ -411,36 +413,6 @@ html {
         transform: scale(1.03);
         transition: 0.2s;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.301); }
-    .productsBody-container #mainProducts-section #asideSection {
-      display: block;
-      background-color: #f8f0e4;
-      margin: 10px;
-      border-radius: 5px;
-      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.397);
-      height: 19.1%; }
-      .productsBody-container #mainProducts-section #asideSection ul {
-        font-size: 1.2rem;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        padding: 40px;
-        font-family: 'Dancing Script', cursive; }
-        .productsBody-container #mainProducts-section #asideSection ul li {
-          margin: 30px;
-          list-style: none; }
-          .productsBody-container #mainProducts-section #asideSection ul li a {
-            text-decoration: none;
-            color: gray; }
-          .productsBody-container #mainProducts-section #asideSection ul li a:hover {
-            color: #555555;
-            transition: 0.2s; }
-        .productsBody-container #mainProducts-section #asideSection ul .line {
-          display: block;
-          width: 60%;
-          height: 1px;
-          background: gray;
-          align-self: center; }
     .productsBody-container #nav-section {
       display: flex;
       flex-direction: row;
