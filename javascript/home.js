@@ -2,7 +2,7 @@ const JSON = "../json/products.json";
 $.getJSON(JSON, function (respuesta, estado) {
   if (estado == "success") {
     let productos = respuesta;
-    for(i = 0; i < 4; i++){
+    for (i = 0; i < 4; i++) {
       const product = document.createElement("div");
       product.className = "home-product";
 
@@ -17,6 +17,6 @@ $.getJSON(JSON, function (respuesta, estado) {
       $(".home-product").fadeOut(3, function () {
         $(".home-product").fadeIn(800);
       });
-    };
+    }
   }
 });

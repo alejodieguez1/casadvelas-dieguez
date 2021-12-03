@@ -1,4 +1,5 @@
 const JSON = "../json/products.json";
+let carrito = [];
 $.getJSON(JSON, function (respuesta, estado) {
   if (estado == "success") {
     let productos = respuesta;
