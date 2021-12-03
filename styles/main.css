@@ -11,7 +11,7 @@ html {
     .body-container #header-section .spacer-bar {
       height: 2px;
       width: 100%;
-      background: #666058; }
+      background: #D9C09F; }
     .body-container #header-section #nav-section img {
       margin-left: 10px;
       width: 100px;
@@ -142,7 +142,7 @@ html {
     .body-container #footer-section .spacer-bar {
       height: 2px;
       width: 100%;
-      background: #666058; }
+      background: #D9C09F; }
     .body-container #footer-section .footer-container {
       display: flex;
       flex-direction: row;
@@ -161,7 +161,7 @@ html {
 
 @media all and (min-width: 768px) {
   .body-container {
-    grid-template-rows: 102px 600px 270px 544px 1900px 100px; }
+    grid-template-rows: 102px 600px 270px 544px 1490px 100px; }
     .body-container #header-section #nav-section {
       display: flex;
       flex-direction: row;
@@ -256,7 +256,7 @@ html {
 
 .productsBody-container {
   display: grid;
-  grid-template-rows: 106px 4400px 100px;
+  grid-template-rows: 106px 2520px 100px;
   background: #bba69c; }
   .productsBody-container #header-section {
     background-color: #ffff;
@@ -264,7 +264,7 @@ html {
     .productsBody-container #header-section .spacer-bar {
       height: 2px;
       width: 100%;
-      background: #666058; }
+      background: #D9C09F; }
     .productsBody-container #header-section #nav-section img {
       margin-left: 10px;
       width: 100px;
@@ -348,7 +348,7 @@ html {
     .productsBody-container #footer-section .spacer-bar {
       height: 2px;
       width: 100%;
-      background: #666058; }
+      background: #D9C09F; }
     .productsBody-container #footer-section .footer-container {
       display: flex;
       flex-direction: row;
@@ -367,7 +367,7 @@ html {
 
 @media all and (min-width: 768px) {
   .productsBody-container {
-    grid-template-rows: 102px 4400px 100px; }
+    grid-template-rows: 102px 2410px 100px; }
     .productsBody-container #header-section #nav-section {
       display: flex;
       flex-direction: row;
@@ -399,7 +399,7 @@ html {
         height: 330px; } }
 @media all and (min-width: 1024px) {
   .productsBody-container {
-    grid-template-rows: 102px 2239px 80px; }
+    grid-template-rows: 102px 1990px 80px; }
     .productsBody-container #mainProducts-section #productsSection {
       display: grid;
       grid-template-columns: 1fr 1fr; }

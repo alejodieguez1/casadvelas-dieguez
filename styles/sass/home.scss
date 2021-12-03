@@ -10,7 +10,7 @@ html {
         .spacer-bar {
             height: 2px;
             width: 100%;
-            background: #666058;
+            background: #D9C09F;
         }
         #nav-section {
             img {
@@ -173,7 +173,7 @@ html {
         .spacer-bar {
             height: 2px;
             width: 100%;
-            background: #666058;
+            background: #D9C09F;
         }
         .footer-container {
             display: flex;
@@ -199,7 +199,7 @@ html {
 }
 @media all and (min-width: 768px) {
     .body-container {
-        grid-template-rows: 102px 600px 270px 544px 1900px 100px;
+        grid-template-rows: 102px 600px 270px 544px 1490px 100px;
         #header-section {
             #nav-section {
                 display: flex;
