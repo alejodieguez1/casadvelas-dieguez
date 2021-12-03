@@ -234,6 +234,7 @@ html {
       .body-container #products-section .home-product p {
         font-size: 1.3rem; }
       .body-container #products-section .home-product button {
+        cursor: pointer;
         width: 200px;
         height: 60px;
         font-size: 1.2rem; }
@@ -407,6 +408,7 @@ html {
       .productsBody-container #mainProducts-section #productsSection .product-container .product img {
         height: 450px; }
       .productsBody-container #mainProducts-section #productsSection .product-container .product button {
+        cursor: pointer;
         width: 200px;
         height: 60px;
         font-size: 1.2rem; }
