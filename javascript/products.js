@@ -13,6 +13,7 @@ $.getJSON(JSON, function (respuesta, estado) {
         <p>${producto.producto}</p>
         <p>${producto.precio}</p>
         <button id="cart-${producto.id}" class="btn-cart" type="button">Agregar a carrito</button>
+        <button id="delete-${producto.id}" class="delete-cart" type="button">Eliminar</button>
         </div>`;
 
       $("#productsSection").append(product);
@@ -20,6 +21,14 @@ $.getJSON(JSON, function (respuesta, estado) {
       $(".product-container").fadeOut(3, function () {
         $(".product-container").fadeIn(800);
       });
+      $(`#cart-${producto.id}`).click(function() {
+        carrito.push(producto);
+        console.log(carrito);
+      })
+      $(`#delete-${producto.id}`).click(function() {
+        carrito.pop(producto);
+        console.log(carrito);
+      })
     });
-  }
+  };
 });
