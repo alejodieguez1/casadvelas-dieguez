@@ -22,7 +22,7 @@ $.getJSON(key, function (respuesta, estado) {
         $(".product-container").fadeIn(800);
       });
       $(`#cart-${producto.id}`).click(function() {
-        const productoJSON = JSON.stringify(producto)
+        const productoJSON = JSON.stringify(producto);
         localStorage.setItem("Productos", productoJSON);
         carrito.push(producto);
         console.log(carrito);
