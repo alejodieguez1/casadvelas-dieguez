@@ -49,7 +49,7 @@ html {
                 overflow: hidden;
                 width: 100%;
                 z-index: 100;
-                margin: 0;
+                margin: 0px;
                 li {
                     margin-top: 40px;
                     list-style: none;
@@ -88,13 +88,21 @@ html {
         text-align: center;
         #productsSection {
             .product-container {
-                background-color: rgb(248, 240, 228);
-                margin: 10px;
-                padding: 10px;
-                border-radius: 5px;
-                box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.397);
                 .product {
-                    margin: 10px;
+                    img {
+                        height: 450px;
+                    }
+                    button {
+                        cursor: pointer;
+                        width: 200px;
+                        height: 60px;
+                        font-size: 1.2rem;
+                    }
+                    button:hover {
+                        transform: scale(1.03);
+                        transition: 0.2s;
+                        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.301);
+                    }
                 }
             }
         }
@@ -166,9 +174,16 @@ html {
                     max-height: 100px;
                     display: flex;
                     flex-direction: row;
-                    width: 480px;
+                    width: 400px;
+                    margin: 0px;
+                    align-self: center;
+                    justify-content: space-between;
+                    margin-right: 20px;
                     li {
-                    margin-right: 10%;
+                        margin-top: 0px;
+                        a {
+                            color: #D9C09F;
+                        }
                     }
                 }
             }
@@ -177,7 +192,7 @@ html {
 }
 @media all and (min-width: 1024px) {
     .cartBody-container {
-        grid-template-rows: 65px 600px 100px;
+        grid-template-rows: 102px 1000px 100px;
         #nav-section {
             display: flex;
             flex-direction: row;
@@ -193,19 +208,15 @@ html {
             }
             .nav-ul {
                 margin: 0px;
-                padding: 0px;
                 li {
                     list-style: none;
-                    margin: 10px;
-                    margin-right: 70px;
                     a {
                         text-decoration: none;
                     }
-                    a:hover {
-                        text-decoration: underline 1px;
-                        font-size: 18px;
-                        transition: 0.5s;
-                    }
+                }
+                li:hover {
+                    text-decoration: #D9C09F underline 2px;
+                    transition: 0.5s;
                 }
             }
         }

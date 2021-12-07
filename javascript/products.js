@@ -27,10 +27,6 @@ $.getJSON(key, function (respuesta, estado) {
         localStorage.setItem("carrito", JSON.stringify(carrito));
         console.log(carrito);
       });
-      $(`#delete-${producto.id}`).click(function() {
-        carrito.pop(producto);
-        localStorage.setItem("carrito", JSON.stringify(carrito));
-      });
     });
   };
 });
