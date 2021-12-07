@@ -1,6 +1,6 @@
-const JSON = "../json/products.json";
+const key = "../json/products.json";
 let carrito = [];
-$.getJSON(JSON, function (respuesta, estado) {
+$.getJSON(key, function (respuesta, estado) {
   if (estado == "success") {
     let productos = respuesta;
     productos.forEach((producto) => {
@@ -22,13 +22,16 @@ $.getJSON(JSON, function (respuesta, estado) {
         $(".product-container").fadeIn(800);
       });
       $(`#cart-${producto.id}`).click(function() {
+        const productoJSON = JSON.stringify(producto)
+        localStorage.setItem("Productos", productoJSON);
         carrito.push(producto);
         console.log(carrito);
-      })
+      });
       $(`#delete-${producto.id}`).click(function() {
+        localStorage.removeItem("Productos");
         carrito.pop(producto);
         console.log(carrito);
-      })
+      });
     });
   };
 });
