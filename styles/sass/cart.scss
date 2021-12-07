@@ -88,20 +88,27 @@ html {
         text-align: center;
         #productsSection {
             .product-container {
+                background-color: #ffff;
+                margin: 10px;
+                padding: 10px;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233);
                 .product {
+                    margin: 10px;
                     img {
-                        height: 450px;
+                        height: 240px;
+                    }
+                    p {
+                        font-family: 'Recoleta';
+                        letter-spacing: 2px;
                     }
                     button {
-                        cursor: pointer;
-                        width: 200px;
-                        height: 60px;
-                        font-size: 1.2rem;
-                    }
-                    button:hover {
-                        transform: scale(1.03);
-                        transition: 0.2s;
-                        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.301);
+                        background: #D9C09F;
+                        width: 30%;
+                        border: none;
+                        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.062);
+                        color: #ffff;
+                        font-family: 'Recoleta';
+                        text-decoration: none;
                     }
                 }
             }
@@ -152,7 +159,7 @@ html {
 }
 @media all and (min-width: 768px) {
     .cartBody-container {
-        grid-template-rows: 65px 1000px 100px;
+        grid-template-rows: 102px 1000px 100px;
         #header-section {
             #nav-section {
                 display: flex;
@@ -188,11 +195,21 @@ html {
                 }
             }
         }
+        #productsSection {
+            .product-container {
+                .product {
+                    margin: 10px;
+                     img {
+                        height: 330px;
+                     }
+                }
+            }
+        }
     }
 }
 @media all and (min-width: 1024px) {
     .cartBody-container {
-        grid-template-rows: 102px 1000px 100px;
+        grid-template-rows: 102px auto 100px;
         #nav-section {
             display: flex;
             flex-direction: row;
@@ -224,6 +241,24 @@ html {
             #productsSection {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                .product-container {
+                    .product {
+                        img {
+                            height: 450px;
+                        }
+                        button {
+                            cursor: pointer;
+                            width: 200px;
+                            height: 60px;
+                            font-size: 1.2rem;
+                        }
+                        button:hover {
+                            transform: scale(1.03);
+                            transition: 0.2s;
+                            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.301);
+                        }
+                    }
+                }
             }
         }
         #footer-section {

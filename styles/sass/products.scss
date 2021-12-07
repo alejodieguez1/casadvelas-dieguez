@@ -3,7 +3,7 @@ html {
 }
 .productsBody-container {
     display: grid;
-    grid-template-rows: 106px 2520px 100px;
+    grid-template-rows: 106px auto 100px;
     background: #bba69c;
     #header-section {
         background-color: #ffff;
@@ -145,7 +145,7 @@ html {
 }    
 @media all and (min-width: 768px) {
     .productsBody-container {
-        grid-template-rows: 102px 2410px 100px;
+        grid-template-rows: 102px auto 100px;
         #header-section {
             #nav-section {
                 display: flex;
@@ -195,7 +195,7 @@ html {
 }
 @media all and (min-width: 1024px) {
     .productsBody-container {
-        grid-template-rows: 102px 1990px 80px;
+        grid-template-rows: 102px auto 80px;
         #mainProducts-section {
             #productsSection {
                 display: grid;

@@ -14,7 +14,6 @@ $.getJSON(key, function (respuesta, estado) {
         <p>${producto.producto}</p>
         <p>${producto.precio}</p>
         <button id="cart-${producto.id}" class="btn-cart" type="button">Agregar a carrito</button>
-        <button id="delete-${producto.id}" class="delete-cart" type="button">Eliminar</button>
         </div>`;
 
       $("#productsSection").append(product);
@@ -22,11 +21,10 @@ $.getJSON(key, function (respuesta, estado) {
       $(".product-container").fadeOut(3, function () {
         $(".product-container").fadeIn(800);
       });
-      $(`#cart-${producto.id}`).click(function() {
+      $(`#cart-${producto.id}`).click(function () {
         carrito.push(producto);
         localStorage.setItem("carrito", JSON.stringify(carrito));
-        console.log(carrito);
       });
     });
-  };
+  }
 });
