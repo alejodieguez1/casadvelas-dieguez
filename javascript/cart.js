@@ -22,9 +22,10 @@ carrito.forEach((producto) => {
     location.reload();
   });
 });
-if (JSON.parse(localStorage.getItem("carrito")) == false) {
-  $("#productsSection").innerHTML = `
-    <div class = "empty-container">
-    <h1>Tu carrito esta vacio</h1>
-    </div>`;
-}
+if (JSON.parse(localStorage.getItem("carrito")).contains(producto) == false ) {
+    const contenedor = document.createElement("div");
+    contenedor.className = "empty-container";
+    contenedor.innerHTML = `
+    <h2>Tu carrito esta vacio</h2>`;
+    $("#productsSection").append(contenedor);
+};
