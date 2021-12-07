@@ -1,5 +1,6 @@
 const key = "../json/products.json";
 let carrito = [];
+localStorage.setItem("carrito", JSON.stringify(carrito));
 $.getJSON(key, function (respuesta, estado) {
   if (estado == "success") {
     let productos = respuesta;
@@ -22,15 +23,13 @@ $.getJSON(key, function (respuesta, estado) {
         $(".product-container").fadeIn(800);
       });
       $(`#cart-${producto.id}`).click(function() {
-        const productoJSON = JSON.stringify(producto);
-        localStorage.setItem("Productos", productoJSON);
         carrito.push(producto);
+        localStorage.setItem("carrito", JSON.stringify(carrito));
         console.log(carrito);
       });
       $(`#delete-${producto.id}`).click(function() {
-        localStorage.removeItem("Productos");
         carrito.pop(producto);
-        console.log(carrito);
+        localStorage.setItem("carrito", JSON.stringify(carrito));
       });
     });
   };
