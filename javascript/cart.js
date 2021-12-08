@@ -22,7 +22,7 @@ carrito.forEach((producto) => {
     location.reload();
   });
 });
-if (JSON.parse(localStorage.getItem("carrito")).contains(producto) == false ) {
+if (carrito[0] == undefined) {
     const contenedor = document.createElement("div");
     contenedor.className = "empty-container";
     contenedor.innerHTML = `
