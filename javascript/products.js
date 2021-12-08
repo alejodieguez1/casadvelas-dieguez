@@ -23,6 +23,7 @@ $.getJSON(key, function (respuesta, estado) {
       });
       $(`#cart-${producto.id}`).click(function () {
         carrito.push(producto);
+        producto.stock = producto.stock-1;
         localStorage.setItem("carrito", JSON.stringify(carrito));
       });
     });

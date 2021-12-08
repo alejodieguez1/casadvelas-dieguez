@@ -453,7 +453,7 @@ html {
 
 .cartBody-container {
   display: grid;
-  grid-template-rows: 106px 1000px 100px; }
+  grid-template-rows: 106px auto 100px; }
   .cartBody-container #header-section {
     background-color: #ffff;
     box-shadow: 0px 0px 5px #464646; }
@@ -575,7 +575,7 @@ html {
 
 @media all and (min-width: 768px) {
   .cartBody-container {
-    grid-template-rows: 102px 1000px 100px; }
+    grid-template-rows: 102px auto 100px; }
     .cartBody-container #header-section #nav-section {
       display: flex;
       flex-direction: row;
