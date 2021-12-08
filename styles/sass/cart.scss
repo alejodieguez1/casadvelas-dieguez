@@ -112,19 +112,38 @@ html {
                     }
                 }
             }
-        }
-        button {
-            background: rgb(248, 240, 228);
-            width: 150px;
-            height: 60px;
-            border: none;
-            border-radius: 2px;
-            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.397);
-        }
-        button:hover {
-            cursor: pointer;
-            transform: scale(1.02);
-            transition: 0.2s;
+            .empty-container {
+                .card {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    height: 600px;
+                    padding: 20px;
+                    margin: 10px;
+                    background-color: #ffff;
+                    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233);
+                    .sad-face {
+                        font-size: 6rem;
+                        transform: rotate(90deg);
+                    }
+                    p {
+                        font-size: 2rem;
+                        margin-top: 12px;
+                        font-family: 'Recoleta';
+                        letter-spacing: 2px;
+                    }
+                    .btn-empty {
+                        background: #D9C09F;
+                        width: 130px;
+                        border: none;
+                        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.062);
+                        color: #ffff;
+                        font-family: 'Recoleta';
+                        text-decoration: none;
+                    }
+                }
+            }
         }
     }
     #footer-section {
@@ -259,6 +278,10 @@ html {
                         }
                     }
                 }
+            .empty-container {
+                max-width: 1000px;
+                margin: 10px;
+            }    
             }
         }
         #footer-section {

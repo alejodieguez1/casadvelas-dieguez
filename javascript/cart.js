@@ -23,10 +23,17 @@ carrito.forEach((producto) => {
   });
 });
 if (carrito[0] == undefined) {
-    const contenedor = document.createElement("div");
-    contenedor.className = "empty-container";
-    contenedor.innerHTML = `
-    <div class = "sad-face">:(</div>
-    <p>Tu carrito esta vacio</p>`;
-    $("#productsSection").append(contenedor);
-};
+  const contenedor = document.createElement("div");
+  contenedor.className = "empty-container";
+  contenedor.innerHTML = `
+    <div class="card">
+    <div class="sad-face">:(</div>
+    <p>Tu carrito esta vacio</p>
+    <button onclick="window.location.href='products.html'" class="btn-empty">Agrega productos</button>
+    </div>
+    `;
+  $("#productsSection").append(contenedor);
+  $("#productsSection").css({
+    "grid-template-columns": "1fr 0fr",
+  });
+}
