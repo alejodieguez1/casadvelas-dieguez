@@ -8,7 +8,7 @@ $.getJSON(JSON, function (respuesta, estado) {
 
       product.innerHTML = `
       <img src="${productos[i].image}" alt="Foto de producto">
-      <p>${productos[i].producto}</p>
+      <p>${productos[i].nombre}</p>
       <button onclick="window.location.href='pages/products.html'">Ver productos</button>
       `;
 

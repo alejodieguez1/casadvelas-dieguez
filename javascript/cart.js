@@ -1,4 +1,7 @@
 let carrito = JSON.parse(localStorage.getItem("carrito"));
+// const guardarLocal = (clave, valor) => {
+//     localStorage.setItem(clave, valor);
+//   };
 carrito.forEach((producto) => {
     const product = document.createElement("div");
     product.className = "product-container";
@@ -6,8 +9,9 @@ carrito.forEach((producto) => {
     product.innerHTML = `
     <div class="product">
     <img src="${producto.image}" alt="Producto relacionado a velas, decoracion, etc">
-    <p>${producto.producto}</p>
+    <p>${producto.nombre}</p>
     <p>${producto.precio}</p>
+    <p>${producto.cantidad}</p>
     <button id="delete-${producto.id}" class="delete-cart" type="button">Eliminar</button>
     </div>`;
     
@@ -17,12 +21,16 @@ carrito.forEach((producto) => {
         $(".product-container").fadeIn(800);
     });
     $(`#delete-${producto.id}`).click(function () {
-        carrito.pop(producto);
+        if(producto.cantidad = 0) {
+            carrito.pop(producto);
+        }else {
+            producto.cantidad = producto.cantidad-1
+        };
         localStorage.setItem("carrito", JSON.stringify(carrito));
-        location.reload();
+        location.reload()
     });
 });
-if (carrito[0] == undefined) {
+if (carrito == 0) {
   const contenedor = document.createElement("div");
   contenedor.className = "empty-container";
   contenedor.innerHTML = `
@@ -38,4 +46,10 @@ if (carrito[0] == undefined) {
     "display": "flex",
     "justify-content": "center",
   });
-}
+}; 
+if(carrito.length == 1) {
+    $("#productsSection").css({
+        "grid-template-columns": "1fr"
+    });
+
+};

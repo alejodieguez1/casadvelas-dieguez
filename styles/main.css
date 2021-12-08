@@ -539,39 +539,42 @@ html {
           color: #ffff;
           font-family: 'Recoleta';
           text-decoration: none; }
-    .cartBody-container #main-section #productsSection .empty-container .card {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      height: 800px;
-      padding: 20px;
-      margin: 10px;
-      background-color: #ffff;
-      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233); }
-      .cartBody-container #main-section #productsSection .empty-container .card .sad-face {
-        font-size: 6rem;
-        transform: rotate(90deg);
-        color: #D9C09F; }
-      .cartBody-container #main-section #productsSection .empty-container .card p {
-        font-size: 2rem;
-        margin-top: 12px;
-        font-family: 'Recoleta';
-        letter-spacing: 2px;
-        color: #D9C09F; }
-      .cartBody-container #main-section #productsSection .empty-container .card .btn-empty {
-        background: #D9C09F;
-        height: 90px;
-        width: 160px;
-        border: none;
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.062);
-        color: #ffff;
-        font-family: 'Recoleta';
-        text-decoration: none; }
-      .cartBody-container #main-section #productsSection .empty-container .card .btn-empty:hover {
-        transform: scale(1.03);
-        transition: 0.2s;
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.301); }
+    .cartBody-container #main-section #productsSection .empty-container {
+      width: 100%;
+      margin: 10px; }
+      .cartBody-container #main-section #productsSection .empty-container .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 800px;
+        padding: 20px;
+        margin: 10px;
+        background-color: #ffff;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233); }
+        .cartBody-container #main-section #productsSection .empty-container .card .sad-face {
+          font-size: 6rem;
+          transform: rotate(90deg);
+          color: #D9C09F; }
+        .cartBody-container #main-section #productsSection .empty-container .card p {
+          font-size: 2rem;
+          margin-top: 12px;
+          font-family: 'Recoleta';
+          letter-spacing: 2px;
+          color: #D9C09F; }
+        .cartBody-container #main-section #productsSection .empty-container .card .btn-empty {
+          background: #D9C09F;
+          height: 90px;
+          width: 160px;
+          border: none;
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.062);
+          color: #ffff;
+          font-family: 'Recoleta';
+          text-decoration: none; }
+        .cartBody-container #main-section #productsSection .empty-container .card .btn-empty:hover {
+          transform: scale(1.03);
+          transition: 0.2s;
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.301); }
   .cartBody-container #footer-section {
     background: #ffff;
     border-top: 2px black; }

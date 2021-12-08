@@ -1,6 +1,8 @@
 const key = "../json/products.json";
 let carrito = [];
-localStorage.setItem("carrito", JSON.stringify(carrito));
+// const guardarLocal = (clave, valor) => {
+//   localStorage.setItem(clave, valor);
+// };
 $.getJSON(key, function (respuesta, estado) {
   if (estado == "success") {
     let productos = respuesta;
@@ -11,8 +13,8 @@ $.getJSON(key, function (respuesta, estado) {
       product.innerHTML = `
         <div class="product">
         <img src="${producto.image}" alt="Producto relacionado a velas, decoracion, etc">
-        <p>${producto.producto}</p>
-        <p>${producto.precio}</p>
+        <p>${producto.nombre}</p>
+        <p>$${producto.precio}</p>
         <button id="cart-${producto.id}" class="btn-cart" type="button">Agregar a carrito</button>
         </div>`;
 
@@ -22,10 +24,18 @@ $.getJSON(key, function (respuesta, estado) {
         $(".product-container").fadeIn(800);
       });
       $(`#cart-${producto.id}`).click(function () {
-        carrito.push(producto);
-        producto.stock = producto.stock-1;
+        if(producto.cantidad == 0) {
+          carrito.push(producto);
+          producto.cantidad = producto.cantidad+1;
+        }else {
+          producto.cantidad = producto.cantidad+1;
+          producto.precio = producto.precio + producto.precio;
+        };
+        // for(producto of carrito) {
+        //   guardarLocal(`${producto.id}`, JSON.stringify(producto));
+        // };
         localStorage.setItem("carrito", JSON.stringify(carrito));
-        swal("Agregaste", `"${producto.producto}" a tu carrito de compras`, "success", {
+        swal("Agregaste", `"${producto.nombre}" a tu carrito de compras`, "success", {
           timer: 900,
           buttons: false,
         });

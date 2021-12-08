@@ -1,8 +1,8 @@
 [
-  { "id": 23, "producto": "Vela Tenesse", "precio": "$56", "stock": 10, "image": "../assets/tenesse-vela.jpeg" },
-  { "id": 24, "producto": "Vela Capri y Difusor con varillas", "precio": "$150", "stock": 25, "image": "../assets/capri-difusor.jpeg" },
-  { "id": 6, "producto": "Homespray Baby", "precio": "$65", "stock": 5, "image": "../assets/baby-homespray.jpeg"},
-  { "id": 89, "producto": "Vela Circle", "precio": "$86", "stock": 7, "image": "../assets/vela-redonda.jpg" },
-  { "id": 76, "producto": "Vela Venice", "precio": "$45", "stock": 11, "image": "../assets/venice-vela.jpeg" },
-  { "id": 2, "producto": "Frasco", "precio": "$250", "stock": 2, "image": "../assets/frasco.jpeg" }
+  { "id": 23, "nombre": "Vela Tenesse", "precio": 56, "cantidad": 0, "image": "../assets/tenesse-vela.jpeg" },
+  { "id": 24, "nombre": "Vela Capri y Difusor con varillas", "precio": 150, "cantidad": 0, "image": "../assets/capri-difusor.jpeg" },
+  { "id": 6, "nombre": "Homespray Baby", "precio": 65, "cantidad": 0, "image": "../assets/baby-homespray.jpeg"},
+  { "id": 89, "nombre": "Vela Circle", "precio": 86, "cantidad": 0, "image": "../assets/vela-redonda.jpg" },
+  { "id": 76, "nombre": "Vela Venice", "precio": 45, "cantidad": 0, "image": "../assets/venice-vela.jpeg" },
+  { "id": 2, "nombre": "Frasco", "precio": 250, "cantidad": 0, "image": "../assets/frasco.jpeg" }
 ]

@@ -113,6 +113,8 @@ html {
                 }
             }
             .empty-container {
+                width: 100%;
+                margin: 10px;
                 .card {
                     display: flex;
                     align-items: center;
