@@ -25,6 +25,7 @@ $.getJSON(key, function (respuesta, estado) {
         carrito.push(producto);
         producto.stock = producto.stock-1;
         localStorage.setItem("carrito", JSON.stringify(carrito));
+        alert(`Agregaste "${producto.producto}" a tu carrito de compras`);
       });
     });
   }

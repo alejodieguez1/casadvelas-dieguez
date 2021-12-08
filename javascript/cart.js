@@ -36,6 +36,6 @@ if (carrito[0] == undefined) {
   $("#productsSection").css({
     "grid-template-columns": "1fr 0fr",
     "display": "flex",
-    "justify-content": "center"
+    "justify-content": "center",
   });
 }
