@@ -35,5 +35,7 @@ if (carrito[0] == undefined) {
   $("#productsSection").append(contenedor);
   $("#productsSection").css({
     "grid-template-columns": "1fr 0fr",
+    "display": "flex",
+    "justify-content": "center"
   });
 }
