@@ -1,7 +1,4 @@
 let carrito = JSON.parse(localStorage.getItem("carrito"));
-// const guardarLocal = (clave, valor) => {
-//     localStorage.setItem(clave, valor);
-//   };
 carrito.forEach((producto) => {
     const product = document.createElement("div");
     product.className = "product-container";
