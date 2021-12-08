@@ -19,10 +19,7 @@ carrito.forEach((producto) => {
     $(`#delete-${producto.id}`).click(function () {
         carrito.pop(producto);
         localStorage.setItem("carrito", JSON.stringify(carrito));
-        swal("Eliminaste", `"${producto.producto}" de tu carrito de compras`, "success", {
-            timer: 900,
-            buttons: false,
-        });
+        location.reload();
     });
 });
 if (carrito[0] == undefined) {
