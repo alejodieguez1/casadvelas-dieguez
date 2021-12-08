@@ -1,9 +1,9 @@
 let carrito = JSON.parse(localStorage.getItem("carrito"));
 carrito.forEach((producto) => {
-    const product = document.createElement("div");
-    product.className = "product-container";
-    
-    product.innerHTML = `
+  const product = document.createElement("div");
+  product.className = "product-container";
+
+  product.innerHTML = `
     <div class="product">
     <img src="${producto.image}" alt="Producto relacionado a velas, decoracion, etc">
     <p>${producto.nombre}</p>
@@ -11,21 +11,21 @@ carrito.forEach((producto) => {
     <p>${producto.cantidad}</p>
     <button id="delete-${producto.id}" class="delete-cart" type="button">Eliminar</button>
     </div>`;
-    
-    $("#productsSection").append(product);
-    
-    $(".product-container").fadeOut(3, function () {
-        $(".product-container").fadeIn(800);
-    });
-    $(`#delete-${producto.id}`).click(function () {
-        if(producto.cantidad = 0) {
-            carrito.pop(producto);
-        }else {
-            producto.cantidad = producto.cantidad-1
-        };
-        localStorage.setItem("carrito", JSON.stringify(carrito));
-        location.reload()
-    });
+
+  $("#productsSection").append(product);
+
+  $(".product-container").fadeOut(3, function () {
+    $(".product-container").fadeIn(800);
+  });
+  $(`#delete-${producto.id}`).click(function () {
+    if ((producto.cantidad == 1)) {
+      carrito.pop(producto);
+    } else {
+      producto.cantidad = producto.cantidad - 1;
+    }
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+    location.reload();
+  });
 });
 if (carrito == 0) {
   const contenedor = document.createElement("div");
@@ -43,10 +43,9 @@ if (carrito == 0) {
     "display": "flex",
     "justify-content": "center",
   });
-}; 
-if(carrito.length == 1) {
-    $("#productsSection").css({
-        "grid-template-columns": "1fr"
-    });
-
-};
+}
+if (carrito.length == 1) {
+  $("#productsSection").css({
+    "grid-template-columns": "1fr",
+  });
+}

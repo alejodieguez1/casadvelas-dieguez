@@ -21,18 +21,23 @@ $.getJSON(key, function (respuesta, estado) {
         $(".product-container").fadeIn(800);
       });
       $(`#cart-${producto.id}`).click(function () {
-        if(producto.cantidad == 0) {
+        if (producto.cantidad == 0) {
           carrito.push(producto);
-          producto.cantidad = producto.cantidad+1;
-        }else {
-          producto.cantidad = producto.cantidad+1;
+          producto.cantidad = producto.cantidad + 1;
+        } else {
+          producto.cantidad = producto.cantidad + 1;
           producto.precio = producto.precio + producto.precio;
-        };
+        }
         localStorage.setItem("carrito", JSON.stringify(carrito));
-        swal("Agregaste", `"${producto.nombre}" a tu carrito de compras`, "success", {
-          timer: 900,
-          buttons: false,
-        });
+        swal(
+          "Agregaste",
+          `"${producto.nombre}" a tu carrito de compras`,
+          "success",
+          {
+            timer: 900,
+            buttons: false,
+          }
+        );
       });
     });
   }
