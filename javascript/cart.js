@@ -26,6 +26,7 @@ if (carrito[0] == undefined) {
     const contenedor = document.createElement("div");
     contenedor.className = "empty-container";
     contenedor.innerHTML = `
-    <h2>Tu carrito esta vacio</h2>`;
+    <div class = "sad-face">:(</div>
+    <p>Tu carrito esta vacio</p>`;
     $("#productsSection").append(contenedor);
 };
