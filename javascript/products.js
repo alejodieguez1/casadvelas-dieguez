@@ -25,7 +25,6 @@ $.getJSON(key, function (respuesta, estado) {
         carrito.push(producto);
         producto.stock = producto.stock-1;
         localStorage.setItem("carrito", JSON.stringify(carrito));
-        swal(`Agregaste "${producto.producto}" a tu carrito de compras`);
         swal("Agregaste", `"${producto.producto}" a tu carrito de compras`, "success", {
           timer: 900,
           buttons: false,
