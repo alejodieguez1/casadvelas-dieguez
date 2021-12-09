@@ -4,7 +4,7 @@ html {
 }
 .cartBody-container {
     display: grid;
-    grid-template-rows: 106px auto 100px;
+    grid-template-rows: 106px auto 250px 100px;
     #header-section {
         background-color: #ffff;
         box-shadow: 0px 0px 5px rgb(70, 70, 70);
@@ -153,6 +153,34 @@ html {
                         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.301);
                     }
                 }
+            }
+        }
+    }
+    #aside-section {
+        background-color: #bba69c;
+        #cartTotal-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            height: 200px;
+            background-color: #ffff;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233);
+            h2 {
+                font-family: 'Recoleta';
+            }
+            #finalCount {
+                font-family: 'Recoleta';
+            }
+            #finishBtn {
+                cursor: pointer;
+                background: #D9C09F;
+                height: 50px;
+                width: 160px;
+                border: none;
+                color: #ffff;
+                font-family: 'Recoleta';
+                text-decoration: none;
             }
         }
     }
