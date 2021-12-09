@@ -12,7 +12,7 @@ $.getJSON(key, function (respuesta, estado) {
         <img src="${producto.image}" alt="Producto relacionado a velas, decoracion, etc">
         <p>${producto.nombre}</p>
         <p>$${producto.precio}</p>
-        <button id="${producto.id}" class="btn-cart" type="button">Agregar a carrito</button>
+        <button id="${producto.id}" class="btn" type="button">Agregar a carrito</button>
         </div>`;
 
       $("#productsSection").append(product);

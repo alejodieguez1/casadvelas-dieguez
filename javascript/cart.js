@@ -24,7 +24,7 @@ if (carrito == 0) {
     <div class="card">
     <div class="sad-face">:(</div>
     <p>Tu carrito esta vacio</p>
-    <button onclick="window.location.href='products.html'" class="btn-empty">Agrega productos</button>
+    <button onclick="window.location.href='products.html'" class="btn">Agrega productos</button>
     </div>
     `;
   $("#productsSection").append(contenedor);
@@ -33,9 +33,33 @@ if (carrito == 0) {
     "display": "flex",
     "justify-content": "center",
   });
-}
+  $("#aside-section").css({
+      "display": "none"
+  });
+  $("#cartBody-container").css({
+      "grid-template-rows": "106px auto 100px",
+  });
+};
 if (carrito.length == 1) {
   $("#productsSection").css({
     "grid-template-columns": "1fr",
   });
 }
+$("#finishBtn").click(function() {
+    swal(
+        "Gracias por tu compra",
+        "Esperamos que vuelvas pronto",
+        "success",
+        {
+            timer: 900,
+            buttons: false,
+        }
+    );
+    carrito = [];
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+});
+$("#empty-cart").click(function() {
+    carrito = [];
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+    location.reload();
+});

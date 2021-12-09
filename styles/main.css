@@ -129,7 +129,7 @@ html {
         margin-top: 12px;
         font-family: 'Recoleta';
         letter-spacing: 2px; }
-      .body-container #products-section .home-product button {
+      .body-container #products-section .home-product .btn {
         background: #D9C09F;
         width: 130px;
         border: none;
@@ -233,12 +233,12 @@ html {
         height: 500px; }
       .body-container #products-section .home-product p {
         font-size: 1.3rem; }
-      .body-container #products-section .home-product button {
+      .body-container #products-section .home-product .btn {
         cursor: pointer;
         width: 200px;
         height: 60px;
         font-size: 1.2rem; }
-      .body-container #products-section .home-product button:hover {
+      .body-container #products-section .home-product .btn:hover {
         transform: scale(1.03);
         transition: 0.2s;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.301); }
@@ -336,7 +336,7 @@ html {
         .productsBody-container #mainProducts-section #productsSection .product-container .product p, .productsBody-container #cart-section #productsSection .product-container .product p {
           font-family: 'Recoleta';
           letter-spacing: 2px; }
-        .productsBody-container #mainProducts-section #productsSection .product-container .product button, .productsBody-container #cart-section #productsSection .product-container .product button {
+        .productsBody-container #mainProducts-section #productsSection .product-container .product .btn, .productsBody-container #cart-section #productsSection .product-container .product .btn {
           background: #D9C09F;
           width: 30%;
           border: none;
@@ -407,12 +407,12 @@ html {
       grid-template-columns: 1fr 1fr; }
       .productsBody-container #mainProducts-section #productsSection .product-container .product img {
         height: 450px; }
-      .productsBody-container #mainProducts-section #productsSection .product-container .product button {
+      .productsBody-container #mainProducts-section #productsSection .product-container .product .btn {
         cursor: pointer;
         width: 200px;
         height: 60px;
         font-size: 1.2rem; }
-      .productsBody-container #mainProducts-section #productsSection .product-container .product button:hover {
+      .productsBody-container #mainProducts-section #productsSection .product-container .product .btn:hover {
         transform: scale(1.03);
         transition: 0.2s;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.301); }
@@ -547,7 +547,7 @@ html {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        height: 800px;
+        height: 1000px;
         padding: 20px;
         margin: 10px;
         background-color: #ffff;
@@ -562,7 +562,7 @@ html {
           font-family: 'Recoleta';
           letter-spacing: 2px;
           color: #D9C09F; }
-        .cartBody-container #main-section #productsSection .empty-container .card .btn-empty {
+        .cartBody-container #main-section #productsSection .empty-container .card .btn {
           background: #D9C09F;
           height: 90px;
           width: 160px;
@@ -571,7 +571,7 @@ html {
           color: #ffff;
           font-family: 'Recoleta';
           text-decoration: none; }
-        .cartBody-container #main-section #productsSection .empty-container .card .btn-empty:hover {
+        .cartBody-container #main-section #productsSection .empty-container .card .btn:hover {
           transform: scale(1.03);
           transition: 0.2s;
           box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.301); }
@@ -586,18 +586,24 @@ html {
       background-color: #ffff;
       box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233); }
       .cartBody-container #aside-section #cartTotal-section h2 {
+        color: #D9C09F;
+        letter-spacing: 2px;
         font-family: 'Recoleta'; }
       .cartBody-container #aside-section #cartTotal-section #finalCount {
         font-family: 'Recoleta'; }
-      .cartBody-container #aside-section #cartTotal-section #finishBtn {
-        cursor: pointer;
-        background: #D9C09F;
-        height: 50px;
-        width: 160px;
-        border: none;
-        color: #ffff;
-        font-family: 'Recoleta';
-        text-decoration: none; }
+      .cartBody-container #aside-section #cartTotal-section .btn-container {
+        display: flex;
+        flex-direction: row; }
+        .cartBody-container #aside-section #cartTotal-section .btn-container .btn {
+          margin: 5px;
+          cursor: pointer;
+          background: #D9C09F;
+          height: 50px;
+          width: 160px;
+          border: none;
+          color: #ffff;
+          font-family: 'Recoleta';
+          text-decoration: none; }
   .cartBody-container #footer-section {
     background: #ffff;
     border-top: 2px black; }
@@ -623,7 +629,7 @@ html {
 
 @media all and (min-width: 768px) {
   .cartBody-container {
-    grid-template-rows: 102px auto 100px; }
+    grid-template-rows: 102px auto 250px 100px; }
     .cartBody-container #header-section #nav-section {
       display: flex;
       flex-direction: row;
@@ -655,7 +661,7 @@ html {
         height: 330px; } }
 @media all and (min-width: 1024px) {
   .cartBody-container {
-    grid-template-rows: 102px auto 100px; }
+    grid-template-rows: 102px auto 250px 100px; }
     .cartBody-container #nav-section {
       display: flex;
       flex-direction: row;
@@ -681,12 +687,12 @@ html {
       grid-template-columns: 1fr 1fr; }
       .cartBody-container #main-section #productsSection .product-container .product img {
         height: 450px; }
-      .cartBody-container #main-section #productsSection .product-container .product button {
+      .cartBody-container #main-section #productsSection .product-container .product .btn {
         cursor: pointer;
         width: 200px;
         height: 60px;
         font-size: 1.2rem; }
-      .cartBody-container #main-section #productsSection .product-container .product button:hover {
+      .cartBody-container #main-section #productsSection .product-container .product .btn:hover {
         transform: scale(1.03);
         transition: 0.2s;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.301); }
