@@ -4,7 +4,7 @@ html {
 }
 .cartBody-container {
     display: grid;
-    grid-template-rows: 106px auto 100px;
+    grid-template-rows: 106px auto 250px 100px;
     #header-section {
         background-color: #ffff;
         box-shadow: 0px 0px 5px rgb(70, 70, 70);
@@ -101,7 +101,7 @@ html {
                         font-family: 'Recoleta';
                         letter-spacing: 2px;
                     }
-                    button {
+                    .btn {
                         background: #D9C09F;
                         width: 30%;
                         border: none;
@@ -120,7 +120,7 @@ html {
                     align-items: center;
                     justify-content: center;
                     flex-direction: column;
-                    height: 800px;
+                    height: 1000px;
                     padding: 20px;
                     margin: 10px;
                     background-color: #ffff;
@@ -137,7 +137,7 @@ html {
                         letter-spacing: 2px;
                         color: #D9C09F;
                     }
-                    .btn-empty {
+                    .btn {
                         background: #D9C09F;
                         height: 90px;
                         width: 160px;
@@ -147,12 +147,50 @@ html {
                         font-family: 'Recoleta';
                         text-decoration: none;
                     }
-                    .btn-empty:hover {
+                    .btn:hover {
                         transform: scale(1.03);
                         transition: 0.2s;
                         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.301);
                     }
                 }
+            }
+        }
+    }
+    #aside-section {
+        background-color: #bba69c;
+        #cartTotal-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            height: 200px;
+            background-color: #ffff;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233);
+            p {
+                letter-spacing: 2px;
+                font-family: 'Recoleta';
+            }
+            #finalCount {
+                font-family: 'Recoleta';
+            }
+            .btn-container {
+                display: flex;
+                flex-direction: row;
+                .btn {
+                    margin: 5px;
+                    cursor: pointer;
+                    background: #D9C09F;
+                    height: 50px;
+                    width: 160px;
+                    border: none;
+                    color: #ffff;
+                    font-family: 'Recoleta';
+                    text-decoration: none;
+                }
+            }
+            .finalCount {
+                width: 100px;
+                height: 100px;
             }
         }
     }
@@ -188,7 +226,7 @@ html {
 }
 @media all and (min-width: 768px) {
     .cartBody-container {
-        grid-template-rows: 102px auto 100px;
+        grid-template-rows: 102px auto 250px 100px;
         #header-section {
             #nav-section {
                 display: flex;
@@ -238,7 +276,7 @@ html {
 }
 @media all and (min-width: 1024px) {
     .cartBody-container {
-        grid-template-rows: 102px auto 100px;
+        grid-template-rows: 102px auto 250px 100px;
         #nav-section {
             display: flex;
             flex-direction: row;
@@ -275,13 +313,13 @@ html {
                         img {
                             height: 450px;
                         }
-                        button {
+                        .btn {
                             cursor: pointer;
                             width: 200px;
                             height: 60px;
                             font-size: 1.2rem;
                         }
-                        button:hover {
+                        .btn:hover {
                             transform: scale(1.03);
                             transition: 0.2s;
                             box-shadow: 0 0 5px rgba(0, 0, 0, 0.301);

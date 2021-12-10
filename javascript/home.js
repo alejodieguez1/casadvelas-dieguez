@@ -9,7 +9,7 @@ $.getJSON(JSON, function (respuesta, estado) {
       product.innerHTML = `
       <img src="${productos[i].image}" alt="Foto de producto">
       <p>${productos[i].nombre}</p>
-      <button onclick="window.location.href='pages/products.html'">Ver productos</button>
+      <button onclick="window.location.href='pages/products.html'" class="btn">Ver productos</button>
       `;
 
       $("#products-section").append(product);
