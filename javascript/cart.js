@@ -78,5 +78,5 @@ precioString = precioTotal.toString();
 const totalContainer = document.createElement("div");
 totalContainer.className = "finalCount";
 totalContainer.innerHTML = `
-<p>El total de tu seria: $${precioTotal}</p>`;
+<p>El total de tu compra seria: $${precioTotal}</p>`;
 $(".price-container").append(totalContainer);
