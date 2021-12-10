@@ -4,28 +4,37 @@ html {
 }
 .contactBody-container {
     display: grid;
-    grid-template-rows: 65px 400px 100px;
+    grid-template-rows: 106px 800px 102px;
     #header-section {
         background-color: #ffff;
         box-shadow: 0px 0px 5px rgb(70, 70, 70);
+        .spacer-bar {
+            height: 2px;
+            width: 100%;
+            background: #D9C09F;
+        }
         #nav-section {
             img {
                 margin-left: 10px;
-                width: 60px;
-                height: 60px;
+                width: 100px;
+                height: 100px;
+                cursor: pointer;
+            }
+            img:hover {
+                cursor: pointer;
             }
             .hmb-menu {
                 display: none;
             }
             .hmb-label {
                 float: right;
-                margin: 22px;
+                margin: 40px;
                 cursor: pointer;
                 display: flex;
                 flex-direction: column;
                 align-self: center;
                 .bar {
-                    background-color: #bba69c;
+                    background-color: #D9C09F;
                     margin: 2px;
                     height: 2px;
                     width: 19px;
@@ -36,24 +45,19 @@ html {
                 position: absolute;
                 max-height: 0;
                 transition: max-height 0.3s ease;
-                background-color: blanchedalmond;
+                background-color: #D9C09F;
                 overflow: hidden;
                 width: 100%;
                 z-index: 100;
-                margin: 0;
+                margin: 0px;
                 li {
+                    margin-top: 40px;
                     list-style: none;
-                    margin: 5px;
-                    padding: 15px;
-                    width: 40px;
-                    .sublist {
-                        display: none;
-                    }
                     a {
                         font-size: 1.2rem;
-                        color: black;
+                        color: #ffff;
                         text-decoration: none;
-                        font-family: 'Dancing Script', cursive;
+                        font-family: 'Recoleta';
                     }
                 }
             }
@@ -92,10 +96,10 @@ html {
     #footer-section {
         background: #ffff;
         border-top: 2px black;
-        .footer-bar {
+        .spacer-bar {
             height: 2px;
             width: 100%;
-            background: #666058;
+            background: #D9C09F;
         }
         .footer-container {
             display: flex;
@@ -104,6 +108,7 @@ html {
             img {
                 height: 100px;
                 width: 100px;
+                cursor: pointer;
             }
             .social-logos {
                 margin-right: 10px;
@@ -111,7 +116,7 @@ html {
                 a {
                     margin: 10px;
                     i {
-                        color: #AEA293;
+                        color: #D9C09F;
                     }
                 }
             }
@@ -120,7 +125,7 @@ html {
 }
 @media all and (min-width: 768px) {
     .contactBody-container {
-        grid-template-rows: 65px 400px 100px;
+        grid-template-rows: 102px 800px 102px;
         #header-section {
             #nav-section {
                 display: flex;
@@ -142,9 +147,16 @@ html {
                     max-height: 100px;
                     display: flex;
                     flex-direction: row;
-                    width: 480px;
+                    width: 400px;
+                    margin: 0px;
+                    align-self: center;
+                    justify-content: space-between;
+                    margin-right: 20px;
                     li {
-                    margin-right: 10%;
+                        margin-top: 0px;
+                        a {
+                            color: #D9C09F;
+                        }
                     }
                 }
             }
@@ -153,7 +165,7 @@ html {
 }
 @media all and (min-width: 1024px) {
     .contactBody-container {
-        grid-template-rows: 65px 400px 100px;
+        grid-template-rows: 102px 800px 102px;
         #nav-section {
             display: flex;
             flex-direction: row;
@@ -169,19 +181,15 @@ html {
             }
             .nav-ul {
                 margin: 0px;
-                padding: 0px;
                 li {
                     list-style: none;
-                    margin: 10px;
-                    margin-right: 70px;
                     a {
                         text-decoration: none;
                     }
-                    a:hover {
-                        text-decoration: underline 1px;
-                        font-size: 18px;
-                        transition: 0.5s;
-                    }
+                }
+                li:hover {
+                    text-decoration: #D9C09F underline 2px;
+                    transition: 0.5s;
                 }
             }
         }

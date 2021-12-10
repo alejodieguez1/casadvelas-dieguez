@@ -17,15 +17,25 @@ carrito.forEach((producto) => {
   $(".product-container").fadeOut(3, function () {
     $(".product-container").fadeIn(800);
   });
-  $(`#${producto.id}`).click(function () {
-    if (producto.cantidad == 1) {
-      carrito.pop(producto);
-    } else {
-      producto.cantidad = producto.cantidad - 1;
-    }
-    localStorage.setItem("carrito", JSON.stringify(carrito));
-    location.reload();
+
+  
+let btnEliminar = document.getElementById(`${producto.id}`);
+btnEliminar.addEventListener('click', borrarItem);
+
+
+
+function borrarItem(evento) {
+  const id = evento.target.id;
+  console.log(id);
+  carrito = carrito.filter((productoE) => {
+      console.log(productoE);
+      return productoE !== id;
   });
+  console.log(carrito);
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+};
+
+
 });
 if (carrito == 0) {
   const contenedor = document.createElement("div");
@@ -80,3 +90,4 @@ totalContainer.className = "finalCount";
 totalContainer.innerHTML = `
 <p>El total de tu compra seria: $${precioTotal}</p>`;
 $(".price-container").append(totalContainer);
+
