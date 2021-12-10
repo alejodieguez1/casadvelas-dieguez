@@ -24,7 +24,6 @@ carrito.forEach((producto) => {
   function borrarItem() {
     if(producto.cantidad == 1){
       carrito = carrito.filter((id) => {
-        console.log(id);
         return producto !== id;
       });
     }else {
