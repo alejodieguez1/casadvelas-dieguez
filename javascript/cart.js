@@ -40,11 +40,11 @@ if (carrito == 0) {
   $("#productsSection").append(contenedor);
   $("#productsSection").css({
     "grid-template-columns": "1fr 0fr",
-    "display": "flex",
+    display: "flex",
     "justify-content": "center",
   });
   $("#aside-section").css({
-    "display": "none",
+    display: "none",
   });
   $("#cartBody-container").css({
     "grid-template-rows": "106px auto 100px",
@@ -68,17 +68,15 @@ $("#empty-cart").click(function () {
   localStorage.setItem("carrito", JSON.stringify(carrito));
   location.reload();
 });
-calcTotal = function(items, prop){
-  return items.reduce( function(a, b){
-      return a + b[prop];
+calcTotal = function (cart, prop) {
+  return cart.reduce(function (a, b) {
+    return a + b[prop];
   }, 0);
 };
-precioTotal = calcTotal(carrito, 'precio');
+precioTotal = calcTotal(carrito, "precio");
 precioString = precioTotal.toString();
 const totalContainer = document.createElement("div");
-const totalP = document.createElement("p");
 totalContainer.className = "finalCount";
-totalP.innerHTML = precioString;
-$(".finalCount").append(totalP);
-$("#cartTotal-section").append(totalContainer);
-console.log(precioTotal);
+totalContainer.innerHTML = `
+<p>El total de tu seria: $${precioTotal}</p>`;
+$(".price-container").append(totalContainer);

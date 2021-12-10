@@ -763,8 +763,7 @@ html {
   text-decoration: none;
 }
 .cartBody-container #aside-section #cartTotal-section .finalCount {
-  width: 100px;
-  height: 100px;
+  width: 265px;
 }
 .cartBody-container #footer-section {
   background: #ffff;
