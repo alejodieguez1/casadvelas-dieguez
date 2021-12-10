@@ -18,24 +18,21 @@ carrito.forEach((producto) => {
     $(".product-container").fadeIn(800);
   });
 
-  
-let btnEliminar = document.getElementById(`${producto.id}`);
-btnEliminar.addEventListener('click', borrarItem);
+  let btnEliminar = document.getElementById(`${producto.id}`);
+  btnEliminar.addEventListener("click", borrarItem);
 
-
-
-function borrarItem(evento) {
-  const id = evento.target.id;
-  console.log(id);
-  carrito = carrito.filter((productoE) => {
-      console.log(productoE);
-      return productoE !== id;
-  });
-  console.log(carrito);
-  localStorage.setItem("carrito", JSON.stringify(carrito));
-};
-
-
+  function borrarItem() {
+    if(producto.cantidad == 1){
+      carrito = carrito.filter((id) => {
+        console.log(id);
+        return producto !== id;
+      });
+    }else {
+      producto.cantidad = producto.cantidad-1;
+    }
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+    location.reload();
+  }
 });
 if (carrito == 0) {
   const contenedor = document.createElement("div");
@@ -50,11 +47,11 @@ if (carrito == 0) {
   $("#productsSection").append(contenedor);
   $("#productsSection").css({
     "grid-template-columns": "1fr 0fr",
-    display: "flex",
+    "display": "flex",
     "justify-content": "center",
   });
   $("#aside-section").css({
-    display: "none",
+    "display": "none",
   });
   $("#cartBody-container").css({
     "grid-template-rows": "106px auto 100px",
@@ -90,4 +87,3 @@ totalContainer.className = "finalCount";
 totalContainer.innerHTML = `
 <p>El total de tu compra seria: $${precioTotal}</p>`;
 $(".price-container").append(totalContainer);
-
