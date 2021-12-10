@@ -22,12 +22,12 @@ carrito.forEach((producto) => {
   btnEliminar.addEventListener("click", borrarItem);
 
   function borrarItem() {
-    if(producto.cantidad == 1){
+    if (producto.cantidad == 1) {
       carrito = carrito.filter((id) => {
         return producto !== id;
       });
-    }else {
-      producto.cantidad = producto.cantidad-1;
+    } else {
+      producto.cantidad = producto.cantidad - 1;
     }
     localStorage.setItem("carrito", JSON.stringify(carrito));
     location.reload();
